@@ -39,7 +39,8 @@ const Movies = () => {
                   <img 
                     src={movie.image}
                     alt={movie.title}
-                    className="object-cover w-1/2 h-1/2"
+                    className="object-cover w-full
+                     h-full"
                   />
                 </a>
               ) : (
