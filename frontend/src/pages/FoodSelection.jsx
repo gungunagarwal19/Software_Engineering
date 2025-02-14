@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const FoodSelection = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const seatPrice = location.state?.totalSeatPrice || 0;
   const [selectedFood, setSelectedFood] = useState([]);
-  const [selectedTime, setSelectedTime] = useState("");
+  const [totalPrice, setTotalPrice] = useState(seatPrice);
 
   const foodItems = [
     { id: 1, name: "Popcorn", price: 100 },
@@ -13,7 +15,13 @@ const FoodSelection = () => {
     { id: 4, name: "Soft Drink", price: 80 },
   ];
 
-  const timeSlots = ["10:00 AM", "1:00 PM", "4:00 PM"];
+  useEffect(() => {
+    const foodTotal = selectedFood.reduce((sum, id) => {
+      const food = foodItems.find((item) => item.id === id);
+      return sum + (food ? food.price : 0);
+    }, 0);
+    setTotalPrice(seatPrice + foodTotal);
+  }, [selectedFood, seatPrice]);
 
   const toggleFoodSelection = (id) => {
     setSelectedFood((prev) =>
@@ -22,8 +30,7 @@ const FoodSelection = () => {
   };
 
   const handleCheckout = () => {
-   
-     alert("Booking Confirmed!");
+    alert(`Booking Confirmed! Total Price: ₹${totalPrice}`);
     navigate("/");
   };
 
@@ -37,9 +44,8 @@ const FoodSelection = () => {
         {foodItems.map((food) => (
           <div
             key={food.id}
-            className={`p-4 rounded-lg text-center cursor-pointer ${
-              selectedFood.includes(food.id) ? "bg-green-500" : "bg-gray-700"
-            }`}
+            className={`p-4 rounded-lg text-center cursor-pointer transition-transform duration-200
+              ${selectedFood.includes(food.id) ? "bg-green-500" : "bg-gray-700"}`}
             onClick={() => toggleFoodSelection(food.id)}
           >
             {food.name} - ₹{food.price}
@@ -47,7 +53,8 @@ const FoodSelection = () => {
         ))}
       </div>
 
-      
+      {/* Total Price Display */}
+      <div className="mt-5 text-lg font-bold">Total Price: ₹{totalPrice}</div>
 
       {/* Checkout Button */}
       <button

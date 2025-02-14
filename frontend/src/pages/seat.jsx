@@ -13,6 +13,8 @@ const SeatBooking = () => {
     if (rowIndex >= 7) return "recliner";
     return "gold";
   };
+  const seatPrices = { gold: 100, diamond: 150, recliner: 200 };
+
 
   const [seats, setSeats] = useState(
     rows.flatMap((row, rowIndex) =>
@@ -36,12 +38,14 @@ const SeatBooking = () => {
       )
     );
   };
+  const selectedSeats = seats.filter((seat) => seat.selected);
+  const totalSeatPrice = selectedSeats.reduce((sum, seat) => sum + seatPrices[seat.type], 0);
 
   const handleBooking = () => {
     setSeats(seats.map((seat) => (seat.selected ? { ...seat, booked: true, selected: false } : seat)));
 
-    // Navigate to Food Selection Page
-    navigate("/food-selection");
+    // setSeats(bookedSeats);
+    navigate("/food-selection", { state: { totalSeatPrice } });
   };
 
   const clearSelection = () => {
@@ -74,7 +78,7 @@ const SeatBooking = () => {
                     ${!seat.selected && seat.type === "diamond" ? "bg-red-500 text-white" : ""} 
                     ${!seat.selected && seat.type === "recliner" ? "bg-blue-500 text-white rounded-lg" : ""}`}
                   onClick={() => !seat.booked && handleSeatClick(seat.id)}
-                  title={`Seat ${seat.id} - ${seat.type}`}
+                  title={`Seat ${seat.id} - ₹${seatPrices[seat.type]}`}
                 >
                   <FaChair className="text-xl" />
                 </div>
