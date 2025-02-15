@@ -44,7 +44,7 @@ const SearchCinemas = () => {
           placeholder="Enter location..."
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          className="border p-2 rounded-md w-80 text-white"
+          className="border p-2 rounded-md w-80 text-black"
         />
         <button
           onClick={handleSearch}
@@ -60,7 +60,7 @@ const SearchCinemas = () => {
           {count > 0 && (
             <p className="font-semibold">Found {count} cinema(s) near {location}</p>
           )}
-
+          <a href="/seat">
           <ul className="mt-4 w-80">
             {cinemas.map((cinema, index) => (
               <li key={index} className="border-b p-2">
@@ -76,6 +76,7 @@ const SearchCinemas = () => {
               </li>
             ))}
           </ul>
+          </a>
         </div>
       </div>
     </div>

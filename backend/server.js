@@ -7,9 +7,9 @@ dotenv.config();
 const traktApiKey = process.env.TRAKT_API_KEY;
 
 const traktBaseUrl = 'https://api.trakt.tv/movies';
- const fanartBaseUrl = 'https://webservice.fanart.tv/v3/movies';
-// const traktApiKey = '5f49d6f4a4fe874f7c43bca412a6956f7e9497ecbf18c18cc9700bea6f0a20c8';
- const fanartApiKey = '2004d4c42bb45cdb35f593993a248beb';
+const fanartBaseUrl = 'https://webservice.fanart.tv/v3/movies';
+
+const fanartApiKey = '2004d4c42bb45cdb35f593993a248beb';
 const overpassBaseUrl = 'https://overpass-api.de/api/interpreter';
 const nominatimBaseUrl = "https://nominatim.openstreetmap.org/search";
 
@@ -18,92 +18,6 @@ app.use(cors({ origin: "*", credentials: true }));
 app.use(express.json());
 
 
-
-// app.get("/movies", async (req, res) => {
-//     try {
-//         // Fetch trending movies
-//         let allMovies = [];
-//         let page = 1;
-//         let pageSize =10; // Maximum allowed limit
-//         let totalPages = 1; // Start with at least 1 page
-//         const currentYear = new Date().getFullYear();
-//         const lastYear = currentYear - 1; 
-
-//         while (page <= totalPages) {
-//             const response = await axios.get(`${traktBaseUrl}/trending`, {
-//                 headers: {
-//                     "Content-Type": "application/json",
-//                     "trakt-api-version": "2",
-//                     "trakt-api-key": traktApiKey
-//                 },
-//                 params: {
-//                     page: page,
-//                     limit: pageSize
-//                 }
-//             });
-
-//             if (response.data.length === 0) break; // Stop if no more movies
-//             const filteredMovies = response.data.filter(movie => {
-//                 return movie.movie.year && (movie.movie.year >= lastYear);
-//             });
-//             console.log(`Movies fetched on page ${page}:`, filteredMovies.length);
-//             if (filteredMovies.length === 0) break;
-//             allMovies = allMovies.concat(filteredMovies);
-//             page++;
-           
-           
-//           //  allMovies = allMovies.concat(response.data);
-
-//             // Trakt API returns pagination info in headers
-//           //  totalPages = parseInt(response.headers["x-pagination-page-count"], 10) || totalPages;
-//             // Move to the next page
-//         }
-
-//         // Fetch images & ratings for each movie
-//         const moviesWithDetails = await Promise.all(allMovies.map(async (movie) => {
-//             let imageUrl = null;
-//             let rating = "N/A";
-
-//             if (movie.movie.ids.imdb) {
-//                 try {
-//                     // Fetch images from Fanart API
-//                     const fanartResponse = await axios.get(`${fanartBaseUrl}/${movie.movie.ids.imdb}`, {
-//                         params: { api_key: fanartApiKey }
-//                     });
-
-//                     const images = fanartResponse.data?.movieposter;
-//                     imageUrl = images && images.length > 0 ? images[0].url : null;
-//                 } catch (error) {
-//                     console.error(`Error fetching image for ${movie.movie.title}:`, error);
-//                 }
-
-//                 try {
-//                     // Fetch movie ratings from Trakt API
-//                     const ratingResponse = await axios.get(`${traktBaseUrl}/${movie     .movie.ids.slug}/ratings`, {
-//                         headers: {
-//                             "Content-Type": "application/json",
-//                             "trakt-api-version": "2",
-//                             "trakt-api-key": traktApiKey
-//                         }
-//                     });
-
-//                     rating = ratingResponse.data.rating || "N/A";
-//                 } catch (error) {
-//                     console.error(`Error fetching rating for ${movie.movie.title}:`, error);
-//                 }
-//             }
-
-//             return { ...allMovies, image: imageUrl, rating };
-//         }));
-
-//         res.json(moviesWithDetails);
-//         console.log(moviesWithDetails)
-//         // res.send(moviesWithDetails)
-//     } catch (error) {
-//         console.error("Error fetching movies:", error);
-//         res.status(500).json({ message: "Failed to fetch movies" });
-//     }
-// });
 
 
 app.get("/movies", async (req, res) => {
@@ -187,7 +101,7 @@ app.get("/movies", async (req, res) => {
         );
 
         res.json(moviesWithDetails);
-        console.log(moviesWithDetails);
+        
     } catch (error) {
         console.error("Error fetching movies:", error.message);
         res.status(500).json({ message: "Failed to fetch movies" });

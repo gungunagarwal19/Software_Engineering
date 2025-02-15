@@ -30,8 +30,7 @@ const FoodSelection = () => {
   };
 
   const handleCheckout = () => {
-    alert(`Booking Confirmed! Total Price: ₹${totalPrice}`);
-    navigate("/");
+    navigate("/payment", { state: { totalPrice } });
   };
 
   return (
