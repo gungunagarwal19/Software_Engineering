@@ -99,7 +99,7 @@ const Login = () => {
         </form>
         {error && <p className="text-red-600 text-center mt-2">{error}</p>}
         <div className="text-center mt-2">
-          <p>Don't have an account?</p>
+          <p>Donot have an account?</p>
           <Link to="/register" className="text-blue-500 hover:underline">
             Sign Up
           </Link>
