@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Movies from "./pages/movies";
 import SearchCinemas from "./pages/cinema";
@@ -12,6 +11,7 @@ import Login from "./pages/Login";
 import UserDashboard from "./pages/UserDashboard";
 import CinemaDashboard from "./pages/CinemaDashboard";
 import PrivateRoute from "./components/PrivateRoute"; // Role-based access control
+import Profile_pg from "./pages/Profile";
 
 const App = () => {
   const isAuthenticated = !!localStorage.getItem("token");
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/food-selection" element={isAuthenticated ? <FoodSelection /> : <Navigate to="/login" />} />
         <Route path="/ticket" element={isAuthenticated ? <TicketPage /> : <Navigate to="/login" />} />
         <Route path="/payment" element={isAuthenticated ? <PaymentPage /> : <Navigate to="/login" />} />
-
+       
         <Route element={<PrivateRoute allowedRoles={["User"]} />}>
           <Route path="/user-dashboard" element={<UserDashboard />} />
         </Route>
@@ -42,6 +42,7 @@ const App = () => {
 
         <Route path="/unauthorized" element={<h1>Unauthorized Access</h1>} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
+        <Route path="/profile" element={<Profile_pg/>}/>
       </Routes>
     </BrowserRouter>
   );
