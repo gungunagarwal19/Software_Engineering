@@ -161,71 +161,96 @@ app.post('/select-seat', async (req, res) => {
 
 app.post("/cinema", async (req, res) => {
     try {
-        const { place } = req.body;
+        let { place, latitude, longitude } = req.body;
 
-        if (!place) {
-            return res.status(400).json({ message: "Please provide a location name" });
+        if (!place && (!latitude || !longitude)) {
+            console.log("No place or coordinates provided");
+            return res.status(400).json({ message: "Please provide a location name or GPS coordinates" });
         }
 
-        // Get latitude and longitude using Nominatim
-        const geoResponse = await axios.get(nominatimBaseUrl, {
-            params: {
-                q: place,
-                format: "json",
-                limit: 1,
-            },
-        });
+        // Convert place to lat/lon if provided
+        if (place) {
+            console.log(`Fetching coordinates for place: ${place}`);
+            const geoResponse = await axios.get(nominatimBaseUrl, {
+                params: { q: place, format: "json", limit: 1 },
+            });
 
-        if (!geoResponse.data.length) {
-            return res.status(404).json({ message: "Location not found" });
-        }
-
-        const { lat, lon } = geoResponse.data[0];
-
-        // Construct Overpass query for cinemas
-        const overpassQuery = `
-        [out:json];
-        node["amenity"="cinema"](around:5000,${lat},${lon});
-        out body;
-        `;
-
-        // Send request to Overpass API
-        const overpassResponse = await axios.post(overpassBaseUrl, `data=${overpassQuery}`);
-
-        // Extract cinema data and calculate distances
-        const cinemas = overpassResponse.data.elements.map((cinema) => {
-            const distance = getDistance(
-                { latitude: lat, longitude: lon }, // User's location
-                { latitude: cinema.lat, longitude: cinema.lon } // Cinema's location
-            );
-
-            // Only include address if it's available
-            const address = cinema.tags && cinema.tags["addr:street"] ? cinema.tags["addr:street"] : undefined;
-
-            const cinemaData = {
-                name: cinema.tags.name || "Unnamed Cinema",
-                lat: cinema.lat,
-                lon: cinema.lon,
-                distance: distance / 1000, // Convert meters to kilometers
-            };
-
-            // Add address only if it's available
-            if (address) {
-                cinemaData.address = address;
+            if (!geoResponse.data.length) {
+                console.log("Location not found");
+                return res.status(404).json({ message: "Location not found" });
             }
 
-            return cinemaData;
-        });
+            latitude = parseFloat(geoResponse.data[0].lat);
+            longitude = parseFloat(geoResponse.data[0].lon);
+            console.log(`Resolved coordinates: Lat=${latitude}, Lon=${longitude}`);
+        }
 
-        // Sort cinemas by distance (ascending)
-        cinemas.sort((a, b) => a.distance - b.distance);
+        console.log(`Searching cinemas near: Lat=${latitude}, Lon=${longitude}`);
 
-        return res.json({ count: cinemas.length, cinemas });
+        const radius = 10000; // 10 km range
+        const overpassQuery = `
+        [out:json];
+        (
+          node["amenity"="cinema"](around:${radius}, ${latitude}, ${longitude});
+          way["amenity"="cinema"](around:${radius}, ${latitude}, ${longitude});
+          relation["amenity"="cinema"](around:${radius}, ${latitude}, ${longitude});
+        );
+        out center;
+        `;
+
+        const overpassResponse = await axios.get(overpassBaseUrl, { params: { data: overpassQuery } });
+
+        console.log("Overpass API raw response:", JSON.stringify(overpassResponse.data, null, 2));
+
+        if (!overpassResponse.data.elements || overpassResponse.data.elements.length === 0) {
+            console.log("No cinemas found nearby");
+            return res.status(404).json({ message: "No cinemas found within 10 km" });
+        }
+
+        const cinemas = await Promise.all(
+            overpassResponse.data.elements.map(async (cinema) => {
+                let address = cinema.tags?.["addr:street"] || "Address not available";
+
+                // Extract latitude and longitude correctly for both nodes and ways
+                const lat = cinema.lat || cinema.center?.lat;
+                const lon = cinema.lon || cinema.center?.lon;
+
+                if (!lat || !lon) {
+                    console.error(`Skipping cinema ${cinema.tags?.name || "Unknown Cinema"} due to missing coordinates.`);
+                    return null; // Skip invalid entries
+                }
+
+                if (address === "Address not available") {
+                    try {
+                        const addressResponse = await axios.get("https://nominatim.openstreetmap.org/reverse", {
+                            params: { lat, lon, format: "json" }
+                        });
+                        address = addressResponse.data.display_name || "Address not available";
+                    } catch (error) {
+                        console.error(`Error fetching address for ${cinema.tags?.name || "Unknown Cinema"}: ${error.message}`);
+                    }
+                }
+
+                return {
+                    name: cinema.tags?.name || "Unknown Cinema",
+                    address,
+                    distance: getDistance({ latitude, longitude }, { latitude: lat, longitude: lon }) / 1000
+                };
+            })
+        );
+
+        // Remove null values from the results
+        const filteredCinemas = cinemas.filter(cinema => cinema !== null);
+
+        console.log("Processed cinema list:", JSON.stringify(filteredCinemas, null, 2));
+
+        res.json({ cinemas: filteredCinemas, count: filteredCinemas.length });
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: "Error fetching cinema data" });
+        console.error("Error fetching cinemas:", error.message);
+        res.status(500).json({ message: "Failed to fetch cinemas" });
     }
 });
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
