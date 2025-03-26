@@ -43,8 +43,11 @@ const SeatBooking = () => {
   const totalSeatPrice = selectedSeats.reduce((sum, seat) => sum + seatPrices[seat.type], 0);
 
   const handleBooking = async () => {
-    const selectedSeatIds = seats.filter(seat => seat.selected).map(seat => seat.id);
-  
+    const selectedSeatIds = selectedSeats.map(seat => seat.id);
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString().split("T")[0]; // YYYY-MM-DD format
+    const formattedTime = currentDate.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true });
+
     try {
       const responses = await Promise.all(
         selectedSeatIds.map(seatId =>
@@ -55,13 +58,13 @@ const SeatBooking = () => {
           }).then(res => res.json())
         )
       );
-  
+
       setSeats(seats.map(seat =>
         responses.some(response => response.seatId === seat.id)
           ? { ...seat, booked: true, selected: false }
           : seat
       ));
-  
+
       navigate("/food-selection", {
         state: {
           selectedSeats: selectedSeatIds,
@@ -71,7 +74,7 @@ const SeatBooking = () => {
           })),
         },
       });
-  
+
     } catch (error) {
       console.error("Error booking seats:", error);
     }

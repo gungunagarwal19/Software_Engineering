@@ -27,12 +27,15 @@ const Movies = () => {
     }
     return stars;
   };
+  const handleMovieClick = (movie) => {
+    navigate("/cinema", { state: { movie: movie.title, theater: "PVR Cinemas" } });
+  };
 
   return (
     <div className="p-6 bg-black text-white w-full min-h-screen">
       <div className="flex flex-wrap justify-center gap-6">
         {movies.map((movie, index) => (
-          <div key={index} className="w-60 bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <div key={index} className="w-60 bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"  onClick={() => handleMovieClick(movie)}>
             <div className="h-80">
               {movie.image ? (
                 <a href="/cinema">

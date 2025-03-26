@@ -4,9 +4,7 @@ import { FaTicketAlt } from "react-icons/fa";
 import { QRCodeCanvas } from "qrcode.react";
 
 const Ticket = ({ movie, theater, seats, date, time, price }) => {
-  const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(
-    ", "
-  )} | Date: ${date} | Time: ${time}`;
+  const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(", ")} | Date: ${date} | Time: ${time}`;
 
   const downloadTicket = () => {
     const canvas = document.querySelector("canvas");
@@ -62,15 +60,15 @@ const Ticket = ({ movie, theater, seats, date, time, price }) => {
 
 const TicketPage = () => {
   const location = useLocation();
-  const { movie, theater, selectedSeats, totalAmount } = location.state || {};
+  const { movie, theater, selectedSeats, totalAmount, date, time } = location.state || {};
 
   return (
     <Ticket
       movie={movie || "Unknown Movie"}
       theater={theater || "Unknown Theater"}
       seats={selectedSeats || ["Unknown"]}
-      date="2025-02-15"
-      time="7:30 PM"
+      date={date || new Date().toISOString().split("T")[0]} // Fallback to today's date
+      time={time || new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true })} // Fallback to current time
       price={totalAmount || "0"}
     />
   );

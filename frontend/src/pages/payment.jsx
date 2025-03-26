@@ -20,14 +20,7 @@ const PaymentPage = () => {
       return;
     }
     alert(`Payment Successful! Amount Paid: ₹${totalAmount}`);
-    navigate("/ticket", { 
-      state: { 
-        movie: "Avengers: Endgame", 
-        theater: "PVR Cinemas", 
-        selectedSeats: ["A12", "A13"], 
-        totalAmount 
-      } 
-    });
+    navigate("/ticket", { state: { totalAmount, screenshot } });
   };
 
   return (

@@ -10,6 +10,7 @@ const SearchCinemas = () => {
   const [error, setError] = useState(null);
   const [useGps, setUseGps] = useState(false);
   const [searched, setSearched] = useState(false);
+  const { movie, theater } = location.state || {};
 
   const handleSearch = async () => {
     setLoading(true);
@@ -81,6 +82,9 @@ const SearchCinemas = () => {
     } finally {
       setLoading(false);
     }
+  };
+  const handleProceedToBooking = () => {
+    navigate("/seat-booking", { state: { movie, theater } });
   };
   const navigate = useNavigate();
 
