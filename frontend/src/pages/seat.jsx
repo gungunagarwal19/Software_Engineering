@@ -13,8 +13,8 @@ const SeatBooking = () => {
     if (rowIndex >= 7) return "recliner";
     return "gold";
   };
+  
   const seatPrices = { gold: 100, diamond: 150, recliner: 200 };
-
 
   const [seats, setSeats] = useState(
     rows.flatMap((row, rowIndex) =>
@@ -38,14 +38,43 @@ const SeatBooking = () => {
       )
     );
   };
+
   const selectedSeats = seats.filter((seat) => seat.selected);
   const totalSeatPrice = selectedSeats.reduce((sum, seat) => sum + seatPrices[seat.type], 0);
 
-  const handleBooking = () => {
-    setSeats(seats.map((seat) => (seat.selected ? { ...seat, booked: true, selected: false } : seat)));
-
-    // setSeats(bookedSeats);
-    navigate("/food-selection", { state: { totalSeatPrice } });
+  const handleBooking = async () => {
+    const selectedSeatIds = seats.filter(seat => seat.selected).map(seat => seat.id);
+  
+    try {
+      const responses = await Promise.all(
+        selectedSeatIds.map(seatId =>
+          fetch("http://localhost:3000/select-seat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ seatId }),
+          }).then(res => res.json())
+        )
+      );
+  
+      setSeats(seats.map(seat =>
+        responses.some(response => response.seatId === seat.id)
+          ? { ...seat, booked: true, selected: false }
+          : seat
+      ));
+  
+      navigate("/food-selection", {
+        state: {
+          selectedSeats: selectedSeatIds,
+          seatPrices: Object.fromEntries(selectedSeatIds.map(seatId => {
+            const seat = seats.find(s => s.id === seatId);
+            return [seatId, seatPrices[seat.type]];
+          })),
+        },
+      });
+  
+    } catch (error) {
+      console.error("Error booking seats:", error);
+    }
   };
 
   const clearSelection = () => {
@@ -54,18 +83,13 @@ const SeatBooking = () => {
 
   return (
     <div className="flex flex-col items-center p-5 bg-gray-900 min-h-screen font-sans text-white">
-      {/* Stage */}
       <div className="bg-gray-700 text-white w-3/5 text-center p-2 rounded-md font-bold mb-5 text-sm">
         Stage
       </div>
 
-      {/* Seats Layout */}
       <div className="flex flex-col items-center gap-4">
         {rows.map((row) => (
-          <div
-            key={row}
-            className="grid grid-cols-[repeat(16,minmax(0,1fr))] gap-3 justify-center"
-          >
+          <div key={row} className="grid grid-cols-[repeat(16,minmax(0,1fr))] gap-3 justify-center">
             {seats
               .filter((seat) => seat.id.startsWith(row))
               .map((seat) => (
@@ -86,7 +110,6 @@ const SeatBooking = () => {
           </div>
         ))}
 
-        {/* Booking Buttons */}
         <div className="flex gap-4 mt-5">
           <button
             className="px-4 py-2 bg-green-500 text-white font-bold rounded-md hover:bg-green-600"

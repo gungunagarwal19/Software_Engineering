@@ -118,6 +118,45 @@ app.get("/movies", async (req, res) => {
     }
 });
 
+
+
+
+
+
+
+app.post('/select-seat', async (req, res) => {
+    const { seatId } = req.body;
+    try {
+        // Check if the seat is already booked
+        const [seat] = await db.execute("SELECT booked FROM seats WHERE id = ?", [seatId]);
+
+        if (seat.length > 0 && seat[0].booked) {
+            return res.status(400).json({ available: false, message: "Seat already booked" });
+        }
+
+        // Book the seat
+        await db.execute("UPDATE seats SET booked = TRUE WHERE id = ?", [seatId]);
+
+        // Return updated seat data
+        res.json({ available: true, seatId, message: "Seat booked successfully" });
+    } catch (error) {
+        console.error("Error booking seat:", error);
+        res.status(500).json({ message: "Error selecting seat" });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Fetch cinemas in a particular location
 
 app.post("/cinema", async (req, res) => {
