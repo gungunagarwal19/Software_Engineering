@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const PaymentPage = () => {
@@ -20,7 +20,14 @@ const PaymentPage = () => {
       return;
     }
     alert(`Payment Successful! Amount Paid: ₹${totalAmount}`);
-    navigate("/ticket", { state: { totalAmount, screenshot } });
+    navigate("/ticket", { 
+      state: { 
+        movie: "Avengers: Endgame", 
+        theater: "PVR Cinemas", 
+        selectedSeats: ["A12", "A13"], 
+        totalAmount 
+      } 
+    });
   };
 
   return (
@@ -28,7 +35,7 @@ const PaymentPage = () => {
       <h1 className="text-2xl font-bold mb-6">Payment Page</h1>
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center w-full max-w-md">
         <p className="text-lg mb-4">Total Amount: <span className="font-bold">₹{totalAmount}</span></p>
-        
+
         {/* Highlighted QR Code */}
         <div className="bg-white p-4 rounded-lg shadow-md border-4 border-yellow-400">
           <img src="/qr-code.jpg" alt="QR Code for Payment" className="w-52 h-52 mx-auto" />

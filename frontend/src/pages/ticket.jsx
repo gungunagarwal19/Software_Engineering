@@ -1,13 +1,18 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { FaTicketAlt } from "react-icons/fa";
 import { QRCodeCanvas } from "qrcode.react";
 
-const Ticket = ({ movie, theater, seat, date, time, price }) => {
-  const ticketData = `Movie: ${movie} | Seat: ${seat} | Date: ${date} | Time: ${time}`;
+const Ticket = ({ movie, theater, seats, date, time, price }) => {
+  const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(
+    ", "
+  )} | Date: ${date} | Time: ${time}`;
 
   const downloadTicket = () => {
     const canvas = document.querySelector("canvas");
-    const image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    const image = canvas
+      .toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
     const link = document.createElement("a");
     link.href = image;
     link.download = `${movie}-ticket.png`;
@@ -23,19 +28,29 @@ const Ticket = ({ movie, theater, seat, date, time, price }) => {
         </div>
 
         <div className="border-b border-gray-600 pb-4 mb-4">
-          <p className="text-gray-300"><strong>Theater:</strong> {theater}</p>
-          <p className="text-gray-300"><strong>Seat:</strong> {seat}</p>
-          <p className="text-gray-300"><strong>Date:</strong> {date}</p>
-          <p className="text-gray-300"><strong>Time:</strong> {time}</p>
-          <p className="text-gray-300"><strong>Price:</strong> ₹{price}</p>
+          <p className="text-gray-300">
+            <strong>Theater:</strong> {theater}
+          </p>
+          <p className="text-gray-300">
+            <strong>Seats:</strong> {seats.join(", ")}
+          </p>
+          <p className="text-gray-300">
+            <strong>Date:</strong> {date}
+          </p>
+          <p className="text-gray-300">
+            <strong>Time:</strong> {time}
+          </p>
+          <p className="text-gray-300">
+            <strong>Price:</strong> ₹{price}
+          </p>
         </div>
 
         <div className="flex justify-center mb-4 bg-white p-2 rounded-lg">
           <QRCodeCanvas value={ticketData} size={120} />
         </div>
 
-        <button 
-          onClick={downloadTicket} 
+        <button
+          onClick={downloadTicket}
           className="w-full bg-yellow-500 text-black py-2 rounded-lg hover:bg-yellow-600 font-bold transition-all duration-300"
         >
           Download Ticket
@@ -45,16 +60,18 @@ const Ticket = ({ movie, theater, seat, date, time, price }) => {
   );
 };
 
-// Example Usage
 const TicketPage = () => {
+  const location = useLocation();
+  const { movie, theater, selectedSeats, totalAmount } = location.state || {};
+
   return (
-    <Ticket 
-      movie="Avengers: Endgame"
-      theater="PVR Cinemas"
-      seat="A12"
+    <Ticket
+      movie={movie || "Unknown Movie"}
+      theater={theater || "Unknown Theater"}
+      seats={selectedSeats || ["Unknown"]}
       date="2025-02-15"
       time="7:30 PM"
-      price="250"
+      price={totalAmount || "0"}
     />
   );
 };
