@@ -4,7 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 const PaymentPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const totalAmount = location.state?.totalPrice || 0;
+  const { movie, theater, selectedSeats, date, time, totalPrice } = location.state || {};
+  const totalAmount = totalPrice || 0;
   const [screenshot, setScreenshot] = useState(null);
 
   const handleFileChange = (event) => {
@@ -19,8 +20,20 @@ const PaymentPage = () => {
       alert("Please upload the payment screenshot before proceeding.");
       return;
     }
+
     alert(`Payment Successful! Amount Paid: ₹${totalAmount}`);
-    navigate("/ticket", { state: { totalAmount, screenshot } });
+    
+    navigate("/ticket", {
+      state: { 
+        totalAmount, 
+        screenshot, 
+        movie,   
+        theater, 
+        selectedSeats,  // ✅ Now correctly included
+        date, 
+        time 
+      } 
+    });
   };
 
   return (
@@ -29,7 +42,7 @@ const PaymentPage = () => {
       <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center w-full max-w-md">
         <p className="text-lg mb-4">Total Amount: <span className="font-bold">₹{totalAmount}</span></p>
 
-        {/* Highlighted QR Code */}
+        {/* QR Code */}
         <div className="bg-white p-4 rounded-lg shadow-md border-4 border-yellow-400">
           <img src="/qr-code.jpg" alt="QR Code for Payment" className="w-52 h-52 mx-auto" />
         </div>
@@ -38,7 +51,9 @@ const PaymentPage = () => {
         {/* Upload Payment Screenshot */}
         <div className="mt-4">
           <input type="file" accept="image/*" onChange={handleFileChange} className="hidden" id="upload" />
-          <label htmlFor="upload" className="block bg-blue-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-blue-600">Upload Payment Screenshot</label>
+          <label htmlFor="upload" className="block bg-blue-500 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-blue-600">
+            Upload Payment Screenshot
+          </label>
         </div>
 
         {screenshot && (

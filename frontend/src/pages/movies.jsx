@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3000/movies")
@@ -27,25 +29,24 @@ const Movies = () => {
     }
     return stars;
   };
+
   const handleMovieClick = (movie) => {
-    navigate("/cinema", { state: { movie: movie.title, theater: "PVR Cinemas" } });
+    
+    navigate("/cinema", { state: { movie } }); // Pass full movie object
   };
 
   return (
     <div className="p-6 bg-black text-white w-full min-h-screen">
       <div className="flex flex-wrap justify-center gap-6">
         {movies.map((movie, index) => (
-          <div key={index} className="w-60 bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"  onClick={() => handleMovieClick(movie)}>
+          <div
+            key={index}
+            className="w-60 bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col cursor-pointer"
+            onClick={() => handleMovieClick(movie)}
+          >
             <div className="h-80">
               {movie.image ? (
-                <a href="/cinema">
-                  <img 
-                    src={movie.image}
-                    alt={movie.title}
-                    className="object-cover w-full
-                     h-full"
-                  />
-                </a>
+                <img src={movie.image} alt={movie.title} className="object-cover w-full h-full" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gray-700 text-gray-300">
                   {movie.title}
@@ -55,7 +56,9 @@ const Movies = () => {
             <div className="p-4 flex flex-col justify-between flex-grow">
               <h2 className="text-lg font-semibold text-white truncate">{movie.title}</h2>
               <p className="text-gray-400 text-sm">Release Date: {movie.year || "Unknown"}</p>
-              <p className="text-gray-400 text-sm">Rating: {typeof movie.rating === "number" ? movie.rating.toFixed(1) : "N/A"}</p>
+              <p className="text-gray-400 text-sm">
+                Rating: {typeof movie.rating === "number" ? movie.rating.toFixed(1) : "N/A"}
+              </p>
               <div className="flex mt-2">{renderStars(movie.rating || 0)}</div>
             </div>
           </div>

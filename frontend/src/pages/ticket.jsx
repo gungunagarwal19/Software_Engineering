@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { FaTicketAlt } from "react-icons/fa";
 import { QRCodeCanvas } from "qrcode.react";
+import { useNavigate } from "react-router-dom";
 
 const Ticket = ({ movie, theater, seats, date, time, price }) => {
   const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(", ")} | Date: ${date} | Time: ${time}`;
@@ -61,10 +62,13 @@ const Ticket = ({ movie, theater, seats, date, time, price }) => {
 const TicketPage = () => {
   const location = useLocation();
   const { movie, theater, selectedSeats, totalAmount, date, time } = location.state || {};
+  console.log("Received data in TicketPage:", movie); 
+  const movieTitle = typeof movie === "object" ? movie.title : movie;
+  console.log("Processed Movie Title:", movieTitle);
 
   return (
     <Ticket
-      movie={movie || "Unknown Movie"}
+      movie={movieTitle || "Unknown Movie"}
       theater={theater || "Unknown Theater"}
       seats={selectedSeats || ["Unknown"]}
       date={date || new Date().toISOString().split("T")[0]} // Fallback to today's date

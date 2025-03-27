@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { FaChair } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const SeatBooking = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { movie, theater } = location.state || {}; 
   const rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
   const seatsPerRow = 16;
 
@@ -68,11 +71,15 @@ const SeatBooking = () => {
       navigate("/food-selection", {
         state: {
           selectedSeats: selectedSeatIds,
-          seatPrices: Object.fromEntries(selectedSeatIds.map(seatId => {
-            const seat = seats.find(s => s.id === seatId);
-            return [seatId, seatPrices[seat.type]];
-          })),
-        },
+          seatPrices: Object.fromEntries(
+            selectedSeatIds.map(seatId => {
+              const seat = seats.find(s => s.id === seatId);
+              return [seatId, seatPrices[seat.type]];
+            })
+          ),
+          movie,  // Pass movie data
+          theater // Pass theater data
+        }
       });
 
     } catch (error) {

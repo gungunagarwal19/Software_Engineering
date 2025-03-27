@@ -10,7 +10,7 @@ const SearchCinemas = () => {
   const [error, setError] = useState(null);
   const [useGps, setUseGps] = useState(false);
   const [searched, setSearched] = useState(false);
-  const { movie, theater } = location.state || {};
+  const { movie} = location.state || {};
 
   const handleSearch = async () => {
     setLoading(true);
@@ -83,10 +83,11 @@ const SearchCinemas = () => {
       setLoading(false);
     }
   };
-  const handleProceedToBooking = () => {
-    navigate("/seat-booking", { state: { movie, theater } });
-  };
   const navigate = useNavigate();
+  const handleProceedToBooking = (cinema) => {
+    navigate("/seat", { state: { movie, theater: cinema.name } });
+  };
+ 
 
   return (
     <div className="relative h-screen w-full bg-cover bg-center text-white flex flex-col items-center justify-center p-6" style={{ backgroundImage: "url('image.png')" }}>
@@ -150,7 +151,7 @@ const SearchCinemas = () => {
             <div
             key={index}
             className="bg-gray-900 bg-opacity-80 rounded-lg p-4 shadow-lg cursor-pointer hover:bg-gray-800 transition"
-            onClick={() => navigate("/seat")}
+            onClick={() => handleProceedToBooking(cinema)}
           >
             <h2 className="font-bold text-yellow-400 flex items-center">
               <MdMovie className="mr-2" /> {cinema.name}

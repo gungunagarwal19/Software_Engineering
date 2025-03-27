@@ -6,7 +6,8 @@ const FoodSelection = () => {
   const location = useLocation();
   const selectedSeats = location.state?.selectedSeats || [];
   const seatPrices = location.state?.seatPrices || {}; // Contains ticket price for each seat
-
+  const movie = location.state?.movie || "Unknown Movie"; 
+  const theater = location.state?.theater || "Unknown Theater";
   const [seatFoodSelection, setSeatFoodSelection] = useState(
     selectedSeats.reduce((acc, seat) => ({ ...acc, [seat]: [] }), {})
   );
@@ -47,7 +48,16 @@ const FoodSelection = () => {
   };
 
   const handleCheckout = () => {
-    navigate("/payment", { state: { totalPrice, seatFoodSelection } });
+    navigate("/payment", { 
+      state: { 
+        totalPrice, 
+        seatFoodSelection,
+        movie,  
+        theater, 
+        selectedSeats, 
+        seatPrices     
+      } 
+    });
   };
 
   return (
