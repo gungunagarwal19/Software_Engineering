@@ -5,7 +5,9 @@ import { QRCodeCanvas } from "qrcode.react";
 import { useNavigate } from "react-router-dom";
 
 const Ticket = ({ movie, theater, seats, date, time, price }) => {
+  console.log("Fetched Movie",movie);
   const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(", ")} | Date: ${date} | Time: ${time}`;
+  console.log(ticketData);
 
   const downloadTicket = () => {
     const canvas = document.querySelector("canvas");

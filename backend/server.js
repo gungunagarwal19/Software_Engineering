@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import axios from 'axios';
 import { getDistance } from 'geolib';
-import { connectDb } from './lib/db.js'; 
+import { connectDb } from './lib/db.js';
 import dotenv from "dotenv";
 import authRouter from './routes/authRoutes.js';  // Update path as per your project structure
 
@@ -17,18 +17,20 @@ const overpassBaseUrl = 'https://overpass-api.de/api/interpreter';
 const nominatimBaseUrl = "https://nominatim.openstreetmap.org/search";
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true , methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: "Content-Type,Authorization",}));
+app.use(cors({
+    origin: "http://localhost:5173", credentials: true, methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+}));
 app.use(express.json());
 
-connectDb(); 
+connectDb();
 
 // Routing
 app.use('/auth', authRouter);
 
 app.get("/", (req, res) => {
     return res.json('Welcome to the API!');
-}); 
+});
 
 app.get("/movies", async (req, res) => {
     try {
@@ -111,7 +113,7 @@ app.get("/movies", async (req, res) => {
         );
 
         res.json(moviesWithDetails);
-        
+
     } catch (error) {
         console.error("Error fetching movies:", error.message);
         res.status(500).json({ message: "Failed to fetch movies" });
@@ -242,7 +244,10 @@ app.post("/cinema", async (req, res) => {
         // Remove null values from the results
         const filteredCinemas = cinemas.filter(cinema => cinema !== null);
 
-        console.log("Processed cinema list:", JSON.stringify(filteredCinemas, null, 2));
+        // Sort cinemas by distance in ascending order
+        filteredCinemas.sort((a, b) => a.distance - b.distance);
+
+        console.log("Processed sorted cinema list:", JSON.stringify(filteredCinemas, null, 2));
 
         res.json({ cinemas: filteredCinemas, count: filteredCinemas.length });
     } catch (error) {
@@ -258,9 +263,8 @@ app.listen(PORT, () => {
 // Handle unexpected errors
 process.on("uncaughtException", (err) => {
     console.error("Uncaught Exception:", err);
-  });
-  
-  process.on("unhandledRejection", (reason, promise) => {
+});
+
+process.on("unhandledRejection", (reason, promise) => {
     console.error("Unhandled Rejection at:", promise, "reason:", reason);
-  });
-  
+});

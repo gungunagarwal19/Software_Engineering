@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaMapMarkerAlt, FaSearch, FaSpinner, FaExclamationTriangle } from "react-icons/fa";
 import { MdLocationOn, MdMovie } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 const SearchCinemas = () => {
   const [location, setLocation] = useState("");
   const [cinemas, setCinemas] = useState([]);
@@ -10,7 +12,10 @@ const SearchCinemas = () => {
   const [error, setError] = useState(null);
   const [useGps, setUseGps] = useState(false);
   const [searched, setSearched] = useState(false);
-  const { movie} = location.state || {};
+  const locationMovie = useLocation()
+  const { movie} = locationMovie.state || {};
+
+  console.log('Movie in cinema Page: ',movie);
 
   const handleSearch = async () => {
     setLoading(true);
@@ -90,7 +95,7 @@ const SearchCinemas = () => {
  
 
   return (
-    <div className="relative h-screen w-full bg-cover bg-center text-white flex flex-col items-center justify-center p-6" style={{ backgroundImage: "url('image.png')" }}>
+    <div className="relative h-screen w-full bg-black bg-cover bg-center text-white flex flex-col items-center justify-center p-6">
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 

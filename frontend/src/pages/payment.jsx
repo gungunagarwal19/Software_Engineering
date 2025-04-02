@@ -7,7 +7,7 @@ const PaymentPage = () => {
   const { movie, theater, selectedSeats, date, time, totalPrice } = location.state || {};
   const totalAmount = totalPrice || 0;
   const [screenshot, setScreenshot] = useState(null);
-
+  
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {

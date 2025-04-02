@@ -30,9 +30,12 @@ const Movies = () => {
     return stars;
   };
 
+
+
   const handleMovieClick = (movie) => {
-    
-    navigate("/cinema", { state: { movie } }); // Pass full movie object
+    console.log("Movie : ", movie)
+    if(movie)
+      navigate("/cinema", { state: { movie } }); // Pass full movie object
   };
 
   return (
