@@ -8,11 +8,12 @@ import authRouter from './routes/authRoutes.js';  // Update path as per your pro
 
 dotenv.config();
 const traktApiKey = process.env.TRAKT_API_KEY;
+const fanartApiKey = process.env.FANART_API_KEY;
 
 const traktBaseUrl = 'https://api.trakt.tv/movies';
 const fanartBaseUrl = 'https://webservice.fanart.tv/v3/movies';
 
-const fanartApiKey = '2004d4c42bb45cdb35f593993a248beb';
+
 const overpassBaseUrl = 'https://overpass-api.de/api/interpreter';
 const nominatimBaseUrl = "https://nominatim.openstreetmap.org/search";
 
@@ -23,7 +24,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-connectDb();
+const pool = await connectDb();
 
 // Routing
 app.use('/auth', authRouter);
@@ -42,7 +43,7 @@ app.get("/movies", async (req, res) => {
         const lastYear = currentYear - 1;
 
         // Fetch trending movies with pagination
-        while (page <= totalPages) {
+        while (true) {
             const response = await axios.get(`${traktBaseUrl}/trending`, {
                 headers: {
                     "Content-Type": "application/json",
@@ -52,13 +53,14 @@ app.get("/movies", async (req, res) => {
                 params: { page, limit: pageSize }
             });
 
-            if (response.data.length === 0) break; // Stop if no more movies
+            if (!response.data.length) break; // Stop if no more movies
 
             const filteredMovies = response.data.filter(movie => movie.movie.year && (movie.movie.year >= lastYear));
 
+
             console.log(`Movies fetched on page ${page}:`, filteredMovies.length);
 
-            if (filteredMovies.length === 0) break;
+            if (!filteredMovies.length) break;
 
             allMovies = allMovies.concat(filteredMovies);
             page++;
@@ -75,19 +77,11 @@ app.get("/movies", async (req, res) => {
 
                 if (movie.movie.ids.imdb) {
                     try {
-                        // Fetch images from Fanart API
-                        const fanartResponse = await axios.get(`${fanartBaseUrl}/${movie.movie.ids.imdb}`, {
-                            params: { api_key: fanartApiKey }
-                        });
-
-                        const images = fanartResponse.data?.movieposter;
-                        imageUrl = images && images.length > 0 ? images[0].url : null;
-                    } catch (error) {
-                        console.error(`Error fetching image for ${movie.movie.title}:`, error.message);
-                    }
+                        const fanartResponse = await axios.get(`${fanartBaseUrl}/${movie.movie.ids.imdb}`, { params: { api_key: fanartApiKey } });
+                        imageUrl = fanartResponse.data?.movieposter?.[0]?.url || null;
+                    } catch (error) { console.error(`Image error for ${movie.movie.title}:`, error.message); }
 
                     try {
-                        // Fetch movie ratings from Trakt API
                         const ratingResponse = await axios.get(`${traktBaseUrl}/${movie.movie.ids.slug}/ratings`, {
                             headers: {
                                 "Content-Type": "application/json",
@@ -95,12 +89,10 @@ app.get("/movies", async (req, res) => {
                                 "trakt-api-key": traktApiKey
                             }
                         });
-
                         rating = ratingResponse.data.rating || "N/A";
-                    } catch (error) {
-                        console.error(`Error fetching rating for ${movie.movie.title}:`, error.message);
-                    }
+                    } catch (error) { console.error(`Rating error for ${movie.movie.title}:`, error.message); }
                 }
+                
 
                 return {
                     title: movie.movie.title,
@@ -126,18 +118,52 @@ app.get("/movies", async (req, res) => {
 
 
 
+
+
+
+
+app.post("/ticketsdetail", async (req, res) => {
+    const { movie, theater, seats, date, time, price } = req.body;
+    console.log( movie, theater, seats, date, time, price)
+
+    try {
+        await pool.execute(
+            "INSERT INTO tickets (movie, theater, seats, date, time, price) VALUES (?, ?, ?, ?, ?, ?)",
+            [movie, theater, JSON.stringify(seats), date, time, price]
+        );
+
+        res.json({ message: "Ticket saved successfully" });
+    } catch (error) {
+        console.error("Error saving ticket:", error);
+        res.status(500).json({ message: "Database error" });
+    }
+});
+
+// Fetch all tickets
+app.get("/tickets", async (req, res) => {
+    try {
+        const [tickets] = await pool.execute("SELECT * FROM tickets");
+        res.json(tickets);
+    } catch (error) {
+        console.error("Error fetching tickets:", error);
+        res.status(500).json({ message: "Database error" });
+    }
+});
+
+
+
 app.post('/select-seat', async (req, res) => {
     const { seatId } = req.body;
     try {
         // Check if the seat is already booked
-        const [seat] = await db.execute("SELECT booked FROM seats WHERE id = ?", [seatId]);
+        const [seat] = await pool.execute("SELECT booked FROM seats WHERE id = ?", [seatId]);
 
         if (seat.length > 0 && seat[0].booked) {
             return res.status(400).json({ available: false, message: "Seat already booked" });
         }
 
         // Book the seat
-        await db.execute("UPDATE seats SET booked = TRUE WHERE id = ?", [seatId]);
+        await pool.execute("UPDATE seats SET booked = TRUE WHERE id = ?", [seatId]);
 
         // Return updated seat data
         res.json({ available: true, seatId, message: "Seat booked successfully" });
@@ -146,6 +172,12 @@ app.post('/select-seat', async (req, res) => {
         res.status(500).json({ message: "Error selecting seat" });
     }
 });
+
+
+
+
+
+
 
 
 

@@ -1,13 +1,46 @@
 import React from "react";
+import axios from 'axios';
+
+import { useState, useEffect } from "react";
+
+
 import { useLocation } from "react-router-dom";
 import { FaTicketAlt } from "react-icons/fa";
 import { QRCodeCanvas } from "qrcode.react";
 import { useNavigate } from "react-router-dom";
 
+
 const Ticket = ({ movie, theater, seats, date, time, price }) => {
-  console.log("Fetched Movie",movie);
   const ticketData = `Movie: ${movie} | Theater: ${theater} | Seats: ${seats.join(", ")} | Date: ${date} | Time: ${time}`;
-  console.log(ticketData);
+  console.log("Ticket Props:", { movie, theater, seats, date, time, price });
+  useEffect(() => {  
+    // Send ticket details to backend
+    const saveTicketToDB = async () => {
+      try {
+        await axios.post("http://localhost:3000/ticketsdetail", {
+          movie,
+          theater,
+          seats,
+          date,
+          time,
+          price
+        });
+      } catch (error) {
+        console.error("Error saving ticket:", error);
+      }
+    };
+
+    saveTicketToDB();
+  }, [movie, theater, seats, date, time, price]);
+
+
+
+
+
+
+
+
+
 
   const downloadTicket = () => {
     const canvas = document.querySelector("canvas");
