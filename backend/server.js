@@ -123,13 +123,13 @@ app.get("/movies", async (req, res) => {
 
 
 app.post("/ticketsdetail", async (req, res) => {
-    const { movie, theater, seats, date, time, price } = req.body;
-    console.log( movie, theater, seats, date, time, price)
+    const { movie, theater, seats, date, time, price, user_id } = req.body;
+    console.log(movie, theater, seats, date, time, price, user_id);
 
     try {
         await pool.execute(
-            "INSERT INTO tickets (movie, theater, seats, date, time, price) VALUES (?, ?, ?, ?, ?, ?)",
-            [movie, theater, JSON.stringify(seats), date, time, price]
+            "INSERT INTO tickets (movie, theater, seats, date, time, price, user_id) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            [movie, theater, JSON.stringify(seats), date, time, price, user_id]
         );
 
         res.json({ message: "Ticket saved successfully" });
@@ -139,10 +139,15 @@ app.post("/ticketsdetail", async (req, res) => {
     }
 });
 
-// Fetch all tickets
+// Fetch all tickets with user information
 app.get("/tickets", async (req, res) => {
     try {
-        const [tickets] = await pool.execute("SELECT * FROM tickets");
+        const [tickets] = await pool.execute(`
+            SELECT t.*, u.Name as user_name, u.Email as user_email 
+            FROM tickets t 
+            JOIN users u ON t.user_id = u.id 
+            ORDER BY t.created_at DESC
+        `);
         res.json(tickets);
     } catch (error) {
         console.error("Error fetching tickets:", error);
@@ -150,7 +155,23 @@ app.get("/tickets", async (req, res) => {
     }
 });
 
-
+// Get tickets for a specific user
+app.get("/tickets/user/:userId", async (req, res) => {
+    try {
+        const [tickets] = await pool.execute(`
+            SELECT t.*, u.Name as user_name, u.Email as user_email 
+            FROM tickets t 
+            JOIN users u ON t.user_id = u.id 
+            WHERE t.user_id = ? 
+            ORDER BY t.created_at DESC
+        `, [req.params.userId]);
+        
+        res.json(tickets);
+    } catch (error) {
+        console.error("Error fetching user tickets:", error);
+        res.status(500).json({ message: "Database error" });
+    }
+});
 
 app.post('/select-seat', async (req, res) => {
     const { seatId } = req.body;

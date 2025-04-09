@@ -31,6 +31,7 @@ const Login = () => {
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("email", response.data.Email);
         localStorage.setItem("role", response.data.role);
+        localStorage.setItem("userId", response.data.id);
   
         // Redirect based on role - match exactly as backend provides
         if (response.data.role === "User") {

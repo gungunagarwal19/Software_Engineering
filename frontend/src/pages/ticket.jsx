@@ -17,13 +17,15 @@ const Ticket = ({ movie, theater, seats, date, time, price }) => {
     // Send ticket details to backend
     const saveTicketToDB = async () => {
       try {
+        const userId = localStorage.getItem("userId");
         await axios.post("http://localhost:3000/ticketsdetail", {
           movie,
           theater,
           seats,
           date,
           time,
-          price
+          price,
+          user_id: userId
         });
       } catch (error) {
         console.error("Error saving ticket:", error);

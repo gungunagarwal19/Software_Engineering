@@ -64,7 +64,12 @@ router.post("/login", async (req, res) => {
       { expiresIn: "3h" }
     );
 
-    res.status(200).json({ token, Email: rows[0].Email, role: rows[0].role });
+    res.status(200).json({ 
+      token, 
+      Email: rows[0].Email, 
+      role: rows[0].role,
+      id: rows[0].id // Return user ID
+    });
   } catch (error) {
     res.status(500).json({ message: "An error occurred.", error: error.message });
   }
@@ -123,6 +128,66 @@ router.get("/home", verifyToken, async (req, res) => {
     return res.status(200).json({ user: rows[0] });
   } catch (error) {
     return res.status(500).json({ message: "Server error", error: error.message });
+  }
+});
+
+// Get user profile by ID
+router.get("/user/:userId", verifyToken, async (req, res) => {
+  try {
+    const db = await connectDb();
+    const [rows] = await db.query(
+      "SELECT id, Name, Email, role, created_at FROM users WHERE id = ?", 
+      [req.params.userId]
+    );
+    
+    if (rows.length === 0) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.json(rows[0]);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching user profile", error: error.message });
+  }
+});
+
+// Update user profile
+router.put("/user/:userId", verifyToken, async (req, res) => {
+  try {
+    const { Name } = req.body;
+    const db = await connectDb();
+    
+    await db.query(
+      "UPDATE users SET Name = ? WHERE id = ?", 
+      [Name, req.params.userId]
+    );
+    
+    res.json({ message: "Profile updated successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Error updating profile", error: error.message });
+  }
+});
+
+// Get user's tickets with movie details
+router.get("/tickets/user/:userId", verifyToken, async (req, res) => {
+  try {
+    const db = await connectDb();
+    const [tickets] = await db.query(`
+      SELECT 
+        t.*,
+        m.title as movie_title,
+        m.year as movie_year,
+        u.Name as user_name,
+        u.Email as user_email
+      FROM tickets t
+      LEFT JOIN movies m ON t.movie = m.title
+      JOIN users u ON t.user_id = u.id
+      WHERE t.user_id = ?
+      ORDER BY t.created_at DESC
+    `, [req.params.userId]);
+    
+    res.json(tickets);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching ticket history", error: error.message });
   }
 });
 
