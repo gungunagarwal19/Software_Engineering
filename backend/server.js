@@ -5,6 +5,7 @@ import { getDistance } from 'geolib';
 import { connectDb } from './lib/db.js';
 import dotenv from "dotenv";
 import authRouter from './routes/authRoutes.js';  // Update path as per your project structure
+import nodemailer from 'nodemailer';
 
 dotenv.config();
 const traktApiKey = process.env.TRAKT_API_KEY;
@@ -25,6 +26,17 @@ app.use(cors({
 app.use(express.json());
 
 const pool = await connectDb();
+
+// Create a transporter using Gmail SMTP
+const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    auth: {
+        user: 'testshuklaweb@gmail.com',
+        pass: 'eeft hdwe vglc sjdg'
+    }
+});
 
 // Routing
 app.use('/auth', authRouter);
@@ -127,12 +139,47 @@ app.post("/ticketsdetail", async (req, res) => {
     console.log(movie, theater, seats, date, time, price, user_id);
 
     try {
+        // Get the user's email from the database
+        const [userRows] = await pool.execute(
+            "SELECT Email FROM users WHERE id = ?",
+            [user_id]
+        );
+
+        if (userRows.length === 0) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        const userEmail = userRows[0].Email;
+
+        // Insert ticket into database
         await pool.execute(
             "INSERT INTO tickets (movie, theater, seats, date, time, price, user_id) VALUES (?, ?, ?, ?, ?, ?, ?)",
             [movie, theater, JSON.stringify(seats), date, time, price, user_id]
         );
 
-        res.json({ message: "Ticket saved successfully" });
+        // Send email to user
+        const mailOptions = {
+            from: 'testshuklaweb@gmail.com',
+            to: userEmail,
+            subject: 'Your Movie Ticket Booking Confirmation',
+            html: `
+                <h1>Ticket Booking Confirmation</h1>
+                <p>Thank you for booking with us! Here are your ticket details:</p>
+                <ul>
+                    <li><strong>Movie:</strong> ${movie}</li>
+                    <li><strong>Theater:</strong> ${theater}</li>
+                    <li><strong>Seats:</strong> ${seats.join(', ')}</li>
+                    <li><strong>Date:</strong> ${date}</li>
+                    <li><strong>Time:</strong> ${time}</li>
+                    <li><strong>Price:</strong> ₹${price}</li>
+                </ul>
+                <p>Enjoy your movie!</p>
+            `
+        };
+
+        await transporter.sendMail(mailOptions);
+
+        res.json({ message: "Ticket saved successfully and confirmation email sent" });
     } catch (error) {
         console.error("Error saving ticket:", error);
         res.status(500).json({ message: "Database error" });
