@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { FaCamera } from "react-icons/fa";
 import axios from "axios";
 
 export default function Profile_pg() {
