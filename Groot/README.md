@@ -64,17 +64,7 @@ Run the main file inside the virtual environment
 (Vision) $ python main.py
 ```
 
-Then open the following address in your browser to access the GUI:
-```bash
-http://127.0.0.1:7860
-```
 
 On this page you can chat with Groot. The files you upload as Dataset will be used by the model to generate responses.
 
-## Authors
-##### Team Vision 
-  
-- [@TheDevyashSaini](https://www.github.com/thedevyashsaini)
-- [@DeepRao03](https://www.github.com/deeprao03)
-- [@Sourabh12345Singh](https://www.github.com/Sourabh12345singh)
-- [@WhoIsAtul](https://www.github.com/whoisatul)
+
