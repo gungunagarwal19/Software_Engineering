@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChair } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
 
 const SeatBooking = () => {
   const navigate = useNavigate();
@@ -9,6 +10,26 @@ const SeatBooking = () => {
   const { movie, theater } = location.state || {}; 
   const rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
   const seatsPerRow = 16;
+  const [bookedSeats, setBookedSeats] = useState([]);
+
+  // Fetch already booked seats for this theater
+  useEffect(() => {
+    const fetchBookedSeats = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/tickets/theater/${encodeURIComponent(theater)}`);
+        const allBookedSeats = response.data.reduce((seats, ticket) => {
+          return [...seats, ...JSON.parse(ticket.seats)];
+        }, []);
+        setBookedSeats(allBookedSeats);
+      } catch (error) {
+        console.error("Error fetching booked seats:", error);
+      }
+    };
+
+    if (theater) {
+      fetchBookedSeats();
+    }
+  }, [theater]);
 
   const getSeatType = (rowIndex) => {
     if (rowIndex <= 1) return "gold";
@@ -48,7 +69,7 @@ const SeatBooking = () => {
   const handleBooking = async () => {
     const selectedSeatIds = selectedSeats.map(seat => seat.id);
     const currentDate = new Date();
-    const formattedDate = currentDate.toISOString().split("T")[0]; // YYYY-MM-DD format
+    const formattedDate = currentDate.toISOString().split("T")[0];
     const formattedTime = currentDate.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true });
 
     try {
@@ -57,7 +78,7 @@ const SeatBooking = () => {
           fetch("http://localhost:3000/select-seat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ seatId }),
+            body: JSON.stringify({ seatId, theater }),
           }).then(res => res.json())
         )
       );
@@ -77,8 +98,8 @@ const SeatBooking = () => {
               return [seatId, seatPrices[seat.type]];
             })
           ),
-          movie,  // Pass movie data
-          theater // Pass theater data
+          movie,
+          theater
         }
       });
 
@@ -102,21 +123,24 @@ const SeatBooking = () => {
           <div key={row} className="grid grid-cols-[repeat(16,minmax(0,1fr))] gap-3 justify-center">
             {seats
               .filter((seat) => seat.id.startsWith(row))
-              .map((seat) => (
-                <div
-                  key={seat.id}
-                  className={`w-12 h-12 flex items-center justify-center rounded-md text-xs cursor-pointer transition-transform duration-200
-                    ${seat.booked ? "bg-gray-600 opacity-60 cursor-not-allowed" : ""}
-                    ${seat.selected ? "bg-orange-500 text-white" : ""} 
-                    ${!seat.selected && seat.type === "gold" ? "bg-gray-400 text-black" : ""} 
-                    ${!seat.selected && seat.type === "diamond" ? "bg-red-500 text-white" : ""} 
-                    ${!seat.selected && seat.type === "recliner" ? "bg-blue-500 text-white rounded-lg" : ""}`}
-                  onClick={() => !seat.booked && handleSeatClick(seat.id)}
-                  title={`Seat ${seat.id} - ₹${seatPrices[seat.type]}`}
-                >
-                  <FaChair className="text-xl" />
-                </div>
-              ))}
+              .map((seat) => {
+                const isBooked = bookedSeats.includes(seat.id);
+                return (
+                  <div
+                    key={seat.id}
+                    className={`w-12 h-12 flex items-center justify-center rounded-md text-xs cursor-pointer transition-transform duration-200
+                      ${isBooked ? "bg-gray-600 opacity-60 cursor-not-allowed" : ""}
+                      ${seat.selected ? "bg-orange-500 text-white" : ""} 
+                      ${!seat.selected && !isBooked && seat.type === "gold" ? "bg-gray-400 text-black" : ""} 
+                      ${!seat.selected && !isBooked && seat.type === "diamond" ? "bg-red-500 text-white" : ""} 
+                      ${!seat.selected && !isBooked && seat.type === "recliner" ? "bg-blue-500 text-white rounded-lg" : ""}`}
+                    onClick={() => !isBooked && handleSeatClick(seat.id)}
+                    title={`Seat ${seat.id} - ${isBooked ? "Booked" : `₹${seatPrices[seat.type]}`}`}
+                  >
+                    <FaChair className="text-xl" />
+                  </div>
+                );
+              })}
           </div>
         ))}
 

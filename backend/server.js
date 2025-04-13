@@ -125,20 +125,27 @@ app.get("/movies", async (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
-
 app.post("/ticketsdetail", async (req, res) => {
     const { movie, theater, seats, date, time, price, user_id } = req.body;
     console.log(movie, theater, seats, date, time, price, user_id);
 
     try {
+        // Check for duplicate tickets
+        const [existingTickets] = await pool.execute(`
+            SELECT id FROM tickets 
+            WHERE movie = ? 
+            AND theater = ? 
+            AND date = ? 
+            AND time = ? 
+            AND JSON_CONTAINS(seats, ?)
+        `, [movie, theater, date, time, JSON.stringify(seats)]);
+
+        if (existingTickets.length > 0) {
+            return res.status(400).json({ 
+                message: "These seats are already booked for this show" 
+            });
+        }
+
         // Get the user's email from the database
         const [userRows] = await pool.execute(
             "SELECT Email FROM users WHERE id = ?",
@@ -291,7 +298,25 @@ app.get("/tickets/user/:userId", async (req, res) => {
     }
 });
 
-// Get QR code for a specific ticket
+// Get tickets for a specific theater 
+app.get("/tickets/theater/:theaterName", async (req, res) => {
+    try {
+        const [tickets] = await pool.execute(`
+            SELECT t.*, u.Name as user_name, u.Email as user_email 
+            FROM tickets t 
+            JOIN users u ON t.user_id = u.id 
+            WHERE t.theater = ? 
+            ORDER BY t.created_at DESC
+        `, [req.params.theaterName]);
+        
+        res.json(tickets);
+    } catch (error) {
+        console.error("Error fetching theater tickets:", error);
+        res.status(500).json({ message: "Database error" });
+    }
+});
+
+// Get QR code for a specific ticket 
 app.get("/ticket/:ticketId/qr", async (req, res) => {
     try {
         const ticketId = req.params.ticketId;
@@ -348,14 +373,21 @@ app.get("/ticket/:ticketId/qr", async (req, res) => {
     }
 });
 
-app.post('/select-seat', async (req, res) => {
-    const { seatId } = req.body;
-    try {
-        // Check if the seat is already booked
-        const [seat] = await pool.execute("SELECT booked FROM seats WHERE id = ?", [seatId]);
 
-        if (seat.length > 0 && seat[0].booked) {
-            return res.status(400).json({ available: false, message: "Seat already booked" });
+app.post('/select-seat', async (req, res) => {
+    const { seatId, theater } = req.body;
+    try {
+        // Check if the seat is already booked in the same theater
+        const [existingBookings] = await pool.execute(`
+            SELECT seats FROM tickets 
+            WHERE theater = ? AND JSON_CONTAINS(seats, ?)
+        `, [theater, JSON.stringify(seatId)]);
+
+        if (existingBookings.length > 0) {
+            return res.status(400).json({ 
+                available: false, 
+                message: "Seat already booked in this theater" 
+            });
         }
 
         // Book the seat
@@ -368,21 +400,6 @@ app.post('/select-seat', async (req, res) => {
         res.status(500).json({ message: "Error selecting seat" });
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
