@@ -35,7 +35,7 @@ const transporter = nodemailer.createTransport({
     auth: {
         user: 'testshuklaweb@gmail.com',
         pass: 'eeft hdwe vglc sjdg'
-    }
+    },
 });
 
 // Routing
@@ -104,7 +104,7 @@ app.get("/movies", async (req, res) => {
                         rating = ratingResponse.data.rating || "N/A";
                     } catch (error) { console.error(`Rating error for ${movie.movie.title}:`, error.message); }
                 }
-                
+
 
                 return {
                     title: movie.movie.title,
@@ -151,13 +151,58 @@ app.post("/ticketsdetail", async (req, res) => {
 
         const userEmail = userRows[0].Email;
 
-        // Insert ticket into database
-        await pool.execute(
+        // Insert ticket into database first (without QR code)
+        const [result] = await pool.execute(
             "INSERT INTO tickets (movie, theater, seats, date, time, price, user_id) VALUES (?, ?, ?, ?, ?, ?, ?)",
             [movie, theater, JSON.stringify(seats), date, time, price, user_id]
         );
 
-        // Send email to user
+        const ticketId = result.insertId;
+
+        // Generate QR code using the Python API
+        let qrCodeBase64 = null;
+        let qrUuid = null;
+        try {
+            // Add a descriptive title to the ticket for better identification
+            const ticketTitle = `${movie} - ${date} ${time}`;
+
+            const qrResponse = await axios.post("http://localhost:3002/generate-qr", {
+                movie,
+                theater,
+                seats,
+                date,
+                time,
+                price,
+                ticket_id: ticketId.toString(),
+                user_id: user_id.toString(),
+                timestamp: new Date().toISOString(),
+                // Add a title field for better identification
+                title: ticketTitle
+            });
+
+            qrCodeBase64 = qrResponse.data.qr_code;
+            qrUuid = qrResponse.data.ticket_data.qr_uuid;
+
+            console.log("Successfully generated QR code with UUID:", qrUuid);
+
+            // Try to update the ticket with QR code if the columns exist
+            try {
+                await pool.execute(
+                    "UPDATE tickets SET qr_code = ?, qr_uuid = ? WHERE id = ?",
+                    [qrCodeBase64, qrUuid, ticketId]
+                );
+            } catch (dbError) {
+                // If columns don't exist, log the error but continue
+                console.log("Could not save QR code to database. The columns might not exist:", dbError.message);
+            }
+        } catch (qrError) {
+            console.error("Error generating QR code:", qrError.message);
+            // Continue even if QR code generation fails
+        }
+
+        // No need for a second attempt at QR code generation
+
+        // Send email to user with only ticket information
         const mailOptions = {
             from: 'testshuklaweb@gmail.com',
             to: userEmail,
@@ -166,6 +211,7 @@ app.post("/ticketsdetail", async (req, res) => {
                 <h1>Ticket Booking Confirmation</h1>
                 <p>Thank you for booking with us! Here are your ticket details:</p>
                 <ul>
+                    <li><strong>Ticket #:</strong> ${ticketId}</li>
                     <li><strong>Movie:</strong> ${movie}</li>
                     <li><strong>Theater:</strong> ${theater}</li>
                     <li><strong>Seats:</strong> ${seats.join(', ')}</li>
@@ -173,13 +219,38 @@ app.post("/ticketsdetail", async (req, res) => {
                     <li><strong>Time:</strong> ${time}</li>
                     <li><strong>Price:</strong> ₹${price}</li>
                 </ul>
+                ${qrCodeBase64 ? `
+                <div style="text-align: center; margin: 15px 0;">
+                    <img src="data:image/png;base64,${qrCodeBase64}" alt="Ticket QR Code" width="200" height="200">
+                </div>` : ''}
                 <p>Enjoy your movie!</p>
             `
         };
 
-        await transporter.sendMail(mailOptions);
+        // Send email
+        try {
+            await transporter.sendMail(mailOptions);
+            console.log(`Email sent to ${userEmail}`);
+        } catch (error) {
+            console.error("Error sending email:", error);
+            // Continue even if email sending fails
+        }
 
-        res.json({ message: "Ticket saved successfully and confirmation email sent" });
+        // Return the ticket ID and QR code to the frontend
+        res.json({
+            message: "Ticket saved successfully and confirmation email sent",
+            ticket: {
+                id: ticketId,
+                movie,
+                theater,
+                seats,
+                date,
+                time,
+                price,
+                qr_uuid: qrUuid
+            },
+            qrCode: qrCodeBase64
+        });
     } catch (error) {
         console.error("Error saving ticket:", error);
         res.status(500).json({ message: "Database error" });
@@ -190,9 +261,9 @@ app.post("/ticketsdetail", async (req, res) => {
 app.get("/tickets", async (req, res) => {
     try {
         const [tickets] = await pool.execute(`
-            SELECT t.*, u.Name as user_name, u.Email as user_email 
-            FROM tickets t 
-            JOIN users u ON t.user_id = u.id 
+            SELECT t.*, u.Name as user_name, u.Email as user_email
+            FROM tickets t
+            JOIN users u ON t.user_id = u.id
             ORDER BY t.created_at DESC
         `);
         res.json(tickets);
@@ -206,16 +277,73 @@ app.get("/tickets", async (req, res) => {
 app.get("/tickets/user/:userId", async (req, res) => {
     try {
         const [tickets] = await pool.execute(`
-            SELECT t.*, u.Name as user_name, u.Email as user_email 
-            FROM tickets t 
-            JOIN users u ON t.user_id = u.id 
-            WHERE t.user_id = ? 
+            SELECT t.*, u.Name as user_name, u.Email as user_email
+            FROM tickets t
+            JOIN users u ON t.user_id = u.id
+            WHERE t.user_id = ?
             ORDER BY t.created_at DESC
         `, [req.params.userId]);
-        
+
         res.json(tickets);
     } catch (error) {
         console.error("Error fetching user tickets:", error);
+        res.status(500).json({ message: "Database error" });
+    }
+});
+
+// Get QR code for a specific ticket
+app.get("/ticket/:ticketId/qr", async (req, res) => {
+    try {
+        const ticketId = req.params.ticketId;
+
+        // Get ticket details from database
+        const [tickets] = await pool.execute(`
+            SELECT t.*, u.Name as user_name, u.Email as user_email
+            FROM tickets t
+            JOIN users u ON t.user_id = u.id
+            WHERE t.id = ?
+        `, [ticketId]);
+
+        if (tickets.length === 0) {
+            return res.status(404).json({ message: "Ticket not found" });
+        }
+
+        const ticket = tickets[0];
+        const seats = JSON.parse(ticket.seats);
+
+        // Generate QR code using the Python API
+        try {
+            const qrResponse = await axios.post("http://localhost:3002/generate-qr", {
+                movie: ticket.movie,
+                theater: ticket.theater,
+                seats: seats,
+                date: ticket.date,
+                time: ticket.time,
+                price: ticket.price,
+                ticket_id: ticket.id.toString(),
+                user_id: ticket.user_id.toString()
+            });
+
+            return res.json({
+                ticket: {
+                    id: ticket.id,
+                    movie: ticket.movie,
+                    theater: ticket.theater,
+                    seats: seats,
+                    date: ticket.date,
+                    time: ticket.time,
+                    price: ticket.price,
+                    user_name: ticket.user_name,
+                    user_email: ticket.user_email
+                },
+                qrCode: qrResponse.data.qr_code
+            });
+        } catch (qrError) {
+            console.error("Error generating QR code:", qrError.message);
+            return res.status(500).json({ message: "Error generating QR code" });
+        }
+    } catch (error) {
+        console.error("Error fetching ticket QR code:", error);
         res.status(500).json({ message: "Database error" });
     }
 });
@@ -355,6 +483,55 @@ app.post("/cinema", async (req, res) => {
         res.status(500).json({ message: "Failed to fetch cinemas" });
     }
 });
+
+// Groot API endpoint
+app.post("/api/groot/chat", async (req, res) => {
+    try {
+        const { message, userId } = req.body;
+
+        if (!message) {
+            return res.status(400).json({ error: "Message is required" });
+        }
+
+        console.log(`Received chat request: "${message}" from user ${userId || 'unknown'}`);
+
+        // Call the Groot API
+        const response = await axios.post("http://localhost:3001/chat", {
+            message,
+            unrestricted: true
+        }, {
+            headers: {
+                "Content-Type": "application/json",
+                "x-api-key": "sk-groot-api-key-2024" // Use the API key from Groot's .env file
+            }
+        });
+
+        console.log(`Groot API response:`, response.data);
+
+        // If the response doesn't have the expected format, create a fallback response
+        if (!response.data || !response.data.response) {
+            console.warn("Unexpected response format from Groot API");
+            return res.json({
+                response: "I received your message, but I'm having trouble processing it right now. Could you try asking something else?",
+                reference_used: false
+            });
+        }
+
+        return res.json(response.data);
+    } catch (error) {
+        console.error("Error calling Groot API:", error.message);
+
+        // Provide a fallback response that doesn't mention errors
+        return res.json({
+            response: "I'm here to help with information about movies, bookings, and CineVibe. What would you like to know?",
+            reference_used: false
+        });
+    }
+});
+
+// Note: Groot API should be started separately
+console.log('\x1b[33m%s\x1b[0m', 'IMPORTANT: The Groot API must be started separately on http://localhost:3001');
+console.log('\x1b[33m%s\x1b[0m', 'Run: python -m uvicorn api:app --host 0.0.0.0 --port 3001 in the Groot directory');
 
 const PORT = 3000;
 app.listen(PORT, () => {

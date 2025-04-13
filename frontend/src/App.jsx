@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        
+
         {/* Ensure authentication before accessing Movies */}
         <Route path="/movies" element={isAuthenticated ? <Movies /> : <Navigate to="/login" />} />
         <Route path="/cinema" element={isAuthenticated ? <SearchCinemas /> : <Navigate to="/login" />} />
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/food-selection" element={isAuthenticated ? <FoodSelection /> : <Navigate to="/login" />} />
         <Route path="/ticket" element={isAuthenticated ? <TicketPage /> : <Navigate to="/login" />} />
         <Route path="/payment" element={isAuthenticated ? <PaymentPage /> : <Navigate to="/login" />} />
-       
+
         <Route element={<PrivateRoute allowedRoles={["User"]} />}>
           <Route path="/user-dashboard" element={<UserDashboard />} />
         </Route>

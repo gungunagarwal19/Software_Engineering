@@ -1,0 +1,29 @@
+CineVibe is an AI-powered app designed to revolutionize how people discover movies through personalization and smart recommendations.
+
+It uses Retrieval-Augmented Generation (RAG) models to understand user input and generate context-aware suggestions and answers.
+
+CineVibe focuses on mood-based discovery, allowing users to search for movies that match their current feelings or vibe.
+
+The app supports natural language queries, so users can simply type or speak things like "I want a feel-good comedy" or "a thriller with a twist ending."
+
+It learns from your watch history, likes, and interactions to continuously improve its recommendation engine.
+
+CineVibe aims to bridge entertainment with AI, offering not just suggestions, but context-rich overviews, trailers, and summaries.
+
+It features a clean and interactive chat-like interface for an intuitive and modern movie browsing experience.
+
+The platform caters to Bollywood, Hollywood, regional, and international films, making it inclusive and diverse.
+
+TV shows and web series are part of the upcoming expansion roadmap for broader content discovery.
+
+CineVibe prioritizes user privacy—your preferences and data are secure and used solely to improve your app experience.
+
+It offers cross-platform support, with launches planned on Android, iOS, and a web version.
+
+CineVibe includes watchlist creation, alerts for new releases, and mood-based filters for quick decisions.
+
+The app supports voice input, making discovery hands-free and seamless.
+
+Social discovery features are in the pipeline, allowing users to see what their friends are watching and recommending.
+
+CineVibe's mission is to make movie discovery personal, intelligent, and joyful, turning your scrolling time into watching time.

@@ -1,0 +1,1807 @@
+2025-04-07 21:18:15,123 - INFO - Pinecone initialized successfully
+2025-04-07 21:18:15,124 - INFO - Source mapping loaded successfully
+2025-04-07 21:18:15,326 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-07 21:18:16,175 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-07 21:18:16,428 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-07 21:18:17,076 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 21:18:17,116 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 21:19:24,138 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:19:25,149 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:19:26,154 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF2B250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:19:26,156 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF2B250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:19:26,157 - INFO - Found 0 similar chunks
+2025-04-07 21:19:26,160 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF29950>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:19:43,481 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:19:44,484 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:19:45,488 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF81590>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:19:45,489 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF81590>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:19:45,490 - INFO - Found 0 similar chunks
+2025-04-07 21:19:45,492 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF834D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:07,541 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:20:08,544 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:20:09,547 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF80E10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:09,548 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF80E10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:09,549 - INFO - Found 0 similar chunks
+2025-04-07 21:20:09,551 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF81810>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:22,000 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:20:23,005 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:20:24,008 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF29F90>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:24,009 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF29F90>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:24,010 - INFO - Found 0 similar chunks
+2025-04-07 21:20:24,012 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF2B4D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:28,994 - INFO - Unrestricted mode set to: True
+2025-04-07 21:20:31,116 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:20:32,120 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:20:33,123 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEA968690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:33,124 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEA968690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:20:33,125 - INFO - Found 0 similar chunks
+2025-04-07 21:20:33,127 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025CEAF839D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:44,111 - INFO - Pinecone initialized successfully
+2025-04-07 21:24:44,112 - INFO - Source mapping loaded successfully
+2025-04-07 21:24:44,307 - INFO - Files to process: 5
+2025-04-07 21:24:44,319 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:24:45,321 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:24:45,972 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 21:24:45,995 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 21:24:46,327 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A6990>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:46,328 - ERROR - Error processing sample: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A6990>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:46,330 - ERROR - Error processing file movies.txt: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A6990>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:46,333 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:24:47,336 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:24:48,338 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30D0690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:48,339 - ERROR - Error processing sample: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30D0690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:48,340 - ERROR - Error processing file movie_faqs.txt: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30D0690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:48,343 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:24:49,356 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:24:50,362 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD2BE7B10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:50,364 - ERROR - Error processing sample: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD2BE7B10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:50,366 - ERROR - Error processing file movie_knowledge.txt: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD2BE7B10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:50,371 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:24:51,376 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:24:52,379 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A5BD0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:52,380 - ERROR - Error processing sample: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A5BD0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:52,381 - ERROR - Error processing file movie_reviews.txt: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A5BD0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:52,384 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 21:24:53,389 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 21:24:54,404 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A7890>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:54,406 - ERROR - Error processing sample: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A7890>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:54,406 - ERROR - Error processing file theaters.txt: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002ECD30A7890>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 21:24:54,866 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-07 21:24:54,882 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-07 22:42:39,505 - INFO - Pinecone initialized successfully
+2025-04-07 22:42:39,507 - INFO - Source mapping loaded successfully
+2025-04-07 22:42:41,250 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-07 22:42:41,566 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-07 22:42:42,185 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 22:42:42,190 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-07 22:42:57,256 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 22:42:58,262 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 22:42:59,269 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344AAB250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 22:42:59,272 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344AAB250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 22:42:59,273 - INFO - Found 0 similar chunks
+2025-04-07 22:42:59,279 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344AAAC10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 22:43:13,399 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-07 22:43:14,405 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-07 22:43:15,409 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344A4A5D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 22:43:15,411 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344A4A5D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-07 22:43:15,412 - INFO - Found 0 similar chunks
+2025-04-07 22:43:15,417 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001A344A4B390>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 18:35:41,295 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 18:35:43,296 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 18:35:45,297 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:06:23,906 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:06:25,907 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:06:27,908 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:26:16,449 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:26:18,450 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:26:20,452 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:29:26,502 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:29:28,504 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:29:30,505 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:31:08,322 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:31:10,323 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:31:12,324 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:37:56,985 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:37:58,986 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:38:00,987 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:40:00,400 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 19:40:02,401 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 19:40:04,402 - ERROR - Failed to initialize Pinecone after 3 attempts: init is no longer a top-level attribute of the pinecone package.
+
+Please create an instance of the Pinecone class instead.
+
+Example:
+
+    import os
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(
+        api_key=os.environ.get("PINECONE_API_KEY")
+    )
+
+    # Now do stuff
+    if 'my_index' not in pc.list_indexes().names():
+        pc.create_index(
+            name='my_index', 
+            dimension=1536, 
+            metric='euclidean',
+            spec=ServerlessSpec(
+                cloud='aws',
+                region='us-west-2'
+            )
+        )
+
+
+2025-04-08 19:40:43,701 - INFO - Pinecone initialized successfully
+2025-04-08 19:40:43,703 - INFO - Source mapping loaded successfully
+2025-04-08 19:40:45,393 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 19:40:45,422 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 19:40:46,033 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:40:46,291 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:41:20,335 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 19:41:21,341 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 19:41:22,347 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023FFE752990>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:41:22,349 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023FFE752990>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:41:22,351 - INFO - Found 0 similar chunks
+2025-04-08 19:41:22,356 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023FFE7525D0>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:42:37,257 - INFO - Pinecone initialized successfully
+2025-04-08 19:42:37,258 - INFO - Source mapping loaded successfully
+2025-04-08 19:42:38,823 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 19:42:38,859 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 19:42:39,576 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:42:39,842 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:47:24,396 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 19:47:25,398 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 19:47:26,401 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C1FD3C50>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:47:26,401 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C1FD3C50>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:47:26,402 - INFO - Found 0 similar chunks
+2025-04-08 19:47:26,404 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C1FD2850>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:53:42,442 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 19:53:43,444 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 19:53:44,446 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C2023890>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:53:44,447 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C2023890>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:53:44,448 - INFO - Found 0 similar chunks
+2025-04-08 19:53:44,450 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000298C2020690>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:54:23,433 - INFO - Pinecone initialized successfully
+2025-04-08 19:54:23,433 - INFO - Source mapping loaded successfully
+2025-04-08 19:54:23,697 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 19:54:24,457 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 19:54:24,473 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 19:54:25,367 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:54:25,444 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 19:55:29,668 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 19:55:30,672 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 19:55:31,674 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4A2BD90>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:55:31,675 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4A2BD90>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:55:31,676 - INFO - Found 0 similar chunks
+2025-04-08 19:55:31,678 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F48EF110>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:56:29,081 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 19:56:30,084 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 19:56:31,086 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7F250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:56:31,088 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7F250>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 19:56:31,089 - INFO - Found 0 similar chunks
+2025-04-08 19:56:31,091 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7FD90>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:01:33,592 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:01:34,597 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:01:35,599 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4FCE490>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:01:35,600 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4FCE490>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:01:35,600 - INFO - Found 0 similar chunks
+2025-04-08 20:01:35,602 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4FCFB10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:02:30,722 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:02:31,725 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:02:32,729 - ERROR - Error creating embedding after 3 attempts: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7EC10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:02:32,729 - ERROR - Error querying database: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/embeddings (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7EC10>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:02:32,730 - INFO - Found 0 similar chunks
+2025-04-08 20:02:32,732 - ERROR - Error generating response: HTTPSConnectionPool(host='api.deepseek.ai', port=443): Max retries exceeded with url: /v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000210F4F7F110>: Failed to resolve 'api.deepseek.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-04-08 20:03:26,472 - INFO - Pinecone initialized successfully
+2025-04-08 20:03:26,473 - INFO - Source mapping loaded successfully
+2025-04-08 20:03:26,742 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 20:03:27,609 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:03:27,626 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:03:28,413 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:03:28,483 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:03:37,193 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:03:37,193 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:03:38,852 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:03:38,853 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:03:40,522 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:03:40,523 - ERROR - Error creating embedding after 3 attempts: DeepSeek API returned status code 404
+2025-04-08 20:03:40,523 - ERROR - Error querying database: DeepSeek API returned status code 404
+2025-04-08 20:03:40,525 - INFO - Found 0 similar chunks
+2025-04-08 20:03:41,350 - ERROR - DeepSeek API error: {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-04-08 20:03:41,350 - ERROR - Error generating response: DeepSeek API returned status code 400
+2025-04-08 20:05:56,745 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:05:56,746 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:05:58,422 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:05:58,423 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:06:00,050 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:06:00,051 - ERROR - Error creating embedding after 3 attempts: DeepSeek API returned status code 404
+2025-04-08 20:06:00,051 - ERROR - Error querying database: DeepSeek API returned status code 404
+2025-04-08 20:06:00,052 - INFO - Found 0 similar chunks
+2025-04-08 20:06:01,051 - ERROR - DeepSeek API error: {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-04-08 20:06:01,051 - ERROR - Error generating response: DeepSeek API returned status code 400
+2025-04-08 20:18:39,010 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:18:39,010 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:18:40,677 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:18:40,678 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:18:42,322 - ERROR - DeepSeek API error: {
+  "error_msg": "Not Found. Please check the configuration."
+}
+2025-04-08 20:18:42,322 - ERROR - Error creating embedding after 3 attempts: DeepSeek API returned status code 404
+2025-04-08 20:18:42,323 - ERROR - Error querying database: DeepSeek API returned status code 404
+2025-04-08 20:18:42,325 - INFO - Found 0 similar chunks
+2025-04-08 20:18:44,212 - ERROR - DeepSeek API error: {"error":{"message":"Model Not Exist","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+2025-04-08 20:18:44,213 - ERROR - Error generating response: DeepSeek API returned status code 400
+2025-04-08 20:19:17,741 - INFO - Pinecone initialized successfully
+2025-04-08 20:19:17,758 - INFO - Source mapping loaded successfully
+2025-04-08 20:19:18,830 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:19:19,080 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:19:19,725 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:19:19,823 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:19:39,452 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:19:41,067 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:19:42,663 - ERROR - Error creating embedding after 3 attempts: Embeddings.create() got an unexpected keyword argument 'stream'
+2025-04-08 20:19:42,664 - ERROR - Error querying database: Embeddings.create() got an unexpected keyword argument 'stream'
+2025-04-08 20:19:42,664 - INFO - Found 0 similar chunks
+2025-04-08 20:19:43,271 - ERROR - Error generating response: Completions.create() got an unexpected keyword argument 'json_mode'
+2025-04-08 20:20:46,323 - INFO - Pinecone initialized successfully
+2025-04-08 20:20:46,324 - INFO - Source mapping loaded successfully
+2025-04-08 20:20:47,331 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:20:47,345 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:20:48,297 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:20:48,326 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:20:56,631 - INFO - HTTP Request: POST https://api.deepseek.com/embeddings "HTTP/1.1 404 Not Found"
+2025-04-08 20:20:56,632 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:20:58,320 - INFO - HTTP Request: POST https://api.deepseek.com/embeddings "HTTP/1.1 404 Not Found"
+2025-04-08 20:20:58,322 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:21:02,067 - INFO - HTTP Request: POST https://api.deepseek.com/embeddings "HTTP/1.1 404 Not Found"
+2025-04-08 20:21:02,068 - ERROR - Error creating embedding after 3 attempts: Error code: 404 - {'error_msg': 'Not Found. Please check the configuration.'}
+2025-04-08 20:21:02,069 - ERROR - Error querying database: Error code: 404 - {'error_msg': 'Not Found. Please check the configuration.'}
+2025-04-08 20:21:02,069 - INFO - Found 0 similar chunks
+2025-04-08 20:21:03,245 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 402 Payment Required"
+2025-04-08 20:21:03,246 - ERROR - Error generating response: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-04-08 20:45:01,278 - INFO - Pinecone initialized successfully
+2025-04-08 20:45:01,279 - INFO - Source mapping loaded successfully
+2025-04-08 20:45:01,315 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 20:45:02,305 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:45:02,323 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:45:03,110 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:45:03,190 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:46:29,885 - INFO - Pinecone initialized successfully
+2025-04-08 20:46:29,886 - INFO - Source mapping loaded successfully
+2025-04-08 20:46:29,940 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 20:46:30,907 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:46:30,926 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:46:31,698 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:46:31,821 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:46:45,840 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:46:48,060 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:46:50,240 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:46:50,241 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:46:50,243 - INFO - Found 0 similar chunks
+2025-04-08 20:46:51,724 - ERROR - Error generating response: Models.generate_content() got an unexpected keyword argument 'temperature'
+2025-04-08 20:47:44,618 - INFO - Pinecone initialized successfully
+2025-04-08 20:47:44,619 - INFO - Source mapping loaded successfully
+2025-04-08 20:47:44,732 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 20:47:45,677 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:47:45,705 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:47:46,526 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:47:46,608 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:47:52,853 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:47:55,135 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:47:57,406 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:47:57,406 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:47:57,408 - INFO - Found 0 similar chunks
+2025-04-08 20:47:58,577 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-08 20:47:58,583 - ERROR - Error generating response: 33 validation errors for _GenerateContentParameters
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.Content.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='You are Groot, a RAG enh...their learning journey.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.list[union[File,Part,is-instance[Image],str]]
+  Input should be a valid list [type=list_type, input_value={'role': 'system', 'conte...heir learning journey.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/list_type
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.File.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='system', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.File.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='You are Groot, a RAG enh...their learning journey.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.Part.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='system', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.Part.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='You are Groot, a RAG enh...their learning journey.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'role': 'system', 'conte...heir learning journey.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].0.str
+  Input should be a valid string [type=string_type, input_value={'role': 'system', 'conte...heir learning journey.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.Content.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='movie ticket', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.list[union[File,Part,is-instance[Image],str]]
+  Input should be a valid list [type=list_type, input_value={'role': 'user', 'content': 'movie ticket'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/list_type
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.File.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='user', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.File.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='movie ticket', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.Part.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='user', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.Part.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='movie ticket', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'role': 'user', 'content': 'movie ticket'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of
+contents.list[union[Content,list[union[File,Part,is-instance[Image],str]],File,Part,is-instance[Image],str]].1.str
+  Input should be a valid string [type=string_type, input_value={'role': 'user', 'content': 'movie ticket'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+contents.Content
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=[{'role': 'system', 'cont...ntent': 'movie ticket'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_attributes_type
+contents.list[union[File,Part,is-instance[Image],str]].0.File.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='system', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].0.File.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='You are Groot, a RAG enh...their learning journey.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].0.Part.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='system', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].0.Part.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='You are Groot, a RAG enh...their learning journey.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].0.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'role': 'system', 'conte...heir learning journey.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of
+contents.list[union[File,Part,is-instance[Image],str]].0.str
+  Input should be a valid string [type=string_type, input_value={'role': 'system', 'conte...heir learning journey.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+contents.list[union[File,Part,is-instance[Image],str]].1.File.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='user', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].1.File.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='movie ticket', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].1.Part.role
+  Extra inputs are not permitted [type=extra_forbidden, input_value='user', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].1.Part.content
+  Extra inputs are not permitted [type=extra_forbidden, input_value='movie ticket', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+contents.list[union[File,Part,is-instance[Image],str]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'role': 'user', 'content': 'movie ticket'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of
+contents.list[union[File,Part,is-instance[Image],str]].1.str
+  Input should be a valid string [type=string_type, input_value={'role': 'user', 'content': 'movie ticket'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+contents.File
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=[{'role': 'system', 'cont...ntent': 'movie ticket'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_attributes_type
+contents.Part
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=[{'role': 'system', 'cont...ntent': 'movie ticket'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_attributes_type
+contents.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value=[{'role': 'system', 'cont...ntent': 'movie ticket'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of
+contents.str
+  Input should be a valid string [type=string_type, input_value=[{'role': 'system', 'cont...ntent': 'movie ticket'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-04-08 20:53:11,976 - INFO - Pinecone initialized successfully
+2025-04-08 20:53:11,977 - INFO - Source mapping loaded successfully
+2025-04-08 20:53:13,057 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 20:53:13,078 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 20:53:13,851 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:53:14,016 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 20:53:20,237 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 20:53:22,062 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 20:53:23,895 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:53:23,895 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 20:53:23,897 - INFO - Found 0 similar chunks
+2025-04-08 20:53:24,739 - ERROR - Error generating response: 'list' object has no attribute 'messages'
+2025-04-08 21:01:44,269 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:01:46,103 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:01:47,952 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:01:47,953 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:01:47,954 - INFO - Found 0 similar chunks
+2025-04-08 21:01:48,812 - ERROR - Error generating response: 'list' object has no attribute 'messages'
+2025-04-08 21:02:05,405 - INFO - Pinecone initialized successfully
+2025-04-08 21:02:05,407 - INFO - Source mapping loaded successfully
+2025-04-08 21:02:06,402 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:02:06,417 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:02:07,204 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:02:07,398 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:02:18,667 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:02:20,496 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:02:22,331 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:02:22,331 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:02:22,334 - INFO - Found 0 similar chunks
+2025-04-08 21:02:23,151 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:03:46,009 - INFO - Pinecone initialized successfully
+2025-04-08 21:03:46,010 - INFO - Source mapping loaded successfully
+2025-04-08 21:03:46,088 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 21:03:47,040 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:03:47,090 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:03:47,943 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:03:48,024 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:03:54,257 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:03:56,067 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:03:57,870 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:03:57,871 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:03:57,872 - INFO - Found 0 similar chunks
+2025-04-08 21:03:58,656 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:05:24,821 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:05:27,198 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:05:29,434 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:05:29,435 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:05:29,436 - INFO - Found 0 similar chunks
+2025-04-08 21:05:30,243 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:05:45,367 - INFO - Pinecone initialized successfully
+2025-04-08 21:05:45,369 - INFO - Source mapping loaded successfully
+2025-04-08 21:05:45,463 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 21:05:46,435 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:05:46,452 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:05:47,264 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:05:47,323 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:05:53,842 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:05:56,335 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:05:58,505 - ERROR - Error creating embedding after 3 attempts: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:05:58,506 - ERROR - Error querying database: Models.embed_content() got an unexpected keyword argument 'content'. Did you mean 'contents'?
+2025-04-08 21:05:58,508 - INFO - Found 0 similar chunks
+2025-04-08 21:05:59,314 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:08:33,990 - INFO - Pinecone initialized successfully
+2025-04-08 21:08:33,991 - INFO - Source mapping loaded successfully
+2025-04-08 21:08:35,078 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:08:35,099 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:08:35,880 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:08:35,980 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:08:44,372 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:08:44,390 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:08:47,465 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:08:47,492 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:08:51,525 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:08:51,550 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object has no attribute 'status_code'
+2025-04-08 21:08:51,550 - ERROR - Error querying database: 'EmbedContentResponse' object has no attribute 'status_code'
+2025-04-08 21:08:51,555 - INFO - Found 0 similar chunks
+2025-04-08 21:08:53,007 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:15:06,126 - INFO - Pinecone initialized successfully
+2025-04-08 21:15:06,128 - INFO - Source mapping loaded successfully
+2025-04-08 21:15:07,164 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:15:07,179 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:15:08,065 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:15:08,147 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:15:26,387 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:15:26,403 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:15:29,280 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:15:29,297 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:15:33,673 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:15:33,690 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object has no attribute 'text'
+2025-04-08 21:15:33,690 - ERROR - Error querying database: 'EmbedContentResponse' object has no attribute 'text'
+2025-04-08 21:15:33,692 - INFO - Found 0 similar chunks
+2025-04-08 21:15:35,011 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:16:36,388 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:16:36,403 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:16:38,722 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:16:38,744 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:16:41,105 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:16:41,135 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object has no attribute 'text'
+2025-04-08 21:16:41,135 - ERROR - Error querying database: 'EmbedContentResponse' object has no attribute 'text'
+2025-04-08 21:16:41,137 - INFO - Found 0 similar chunks
+2025-04-08 21:16:41,968 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:16:52,627 - INFO - Pinecone initialized successfully
+2025-04-08 21:16:52,628 - INFO - Source mapping loaded successfully
+2025-04-08 21:16:53,688 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:16:53,707 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:16:54,581 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:16:54,589 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:17:05,323 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:17:05,348 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:17:07,721 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:17:07,745 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:17:10,141 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:17:10,161 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object has no attribute 'value'
+2025-04-08 21:17:10,162 - ERROR - Error querying database: 'EmbedContentResponse' object has no attribute 'value'
+2025-04-08 21:17:10,163 - INFO - Found 0 similar chunks
+2025-04-08 21:17:11,067 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:18:08,161 - INFO - Pinecone initialized successfully
+2025-04-08 21:18:08,163 - INFO - Source mapping loaded successfully
+2025-04-08 21:18:09,319 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:18:09,326 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:18:10,134 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:18:10,245 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:18:14,379 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:18:14,389 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:18:17,661 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:18:17,669 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:18:21,282 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:18:21,294 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object is not subscriptable
+2025-04-08 21:18:21,294 - ERROR - Error querying database: 'EmbedContentResponse' object is not subscriptable
+2025-04-08 21:18:21,296 - INFO - Found 0 similar chunks
+2025-04-08 21:18:22,255 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 21:19:13,980 - INFO - Pinecone initialized successfully
+2025-04-08 21:19:13,981 - INFO - Source mapping loaded successfully
+2025-04-08 21:19:15,030 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 21:19:15,046 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 21:19:15,873 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:19:15,998 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 21:19:25,509 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:19:25,517 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 21:19:29,111 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:19:29,120 - WARNING - Embedding attempt 2 failed, retrying...
+2025-04-08 21:19:32,044 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 21:19:32,050 - ERROR - Error creating embedding after 3 attempts: 'EmbedContentResponse' object is not subscriptable
+2025-04-08 21:19:32,050 - ERROR - Error querying database: 'EmbedContentResponse' object is not subscriptable
+2025-04-08 21:19:32,051 - INFO - Found 0 similar chunks
+2025-04-08 21:19:32,923 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:33:04,829 - INFO - Pinecone initialized successfully
+2025-04-08 22:33:04,831 - INFO - Source mapping loaded successfully
+2025-04-08 22:33:06,662 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:33:06,708 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:33:07,297 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:33:07,409 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:33:24,067 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:33:24,071 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:33:25,077 - ERROR - Error accessing Pinecone index: You are attempting to access the Index client directly from the pinecone module. The Index client must be instantiated through the parent Pinecone client instance so that it can inherit shared configurations such as API key.
+
+    INCORRECT USAGE:
+        ```
+        import pinecone
+
+        pc = pinecone.Pinecone(api_key='your-api-key')
+        index = pinecone.Index('CInevibe-index')
+        ```
+
+    CORRECT USAGE:
+        ```
+        from pinecone import Pinecone
+
+        pc = Pinecone(api_key='your-api-key')
+        index = pc.Index('CInevibe-index')
+        ```
+        
+2025-04-08 22:33:25,084 - INFO - Found 0 similar chunks
+2025-04-08 22:33:27,037 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:35:46,504 - INFO - Pinecone initialized successfully
+2025-04-08 22:35:46,506 - INFO - Source mapping loaded successfully
+2025-04-08 22:35:48,341 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:35:48,390 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:35:49,046 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:35:49,176 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:36:00,860 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:36:00,875 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:36:01,885 - ERROR - Error accessing Pinecone index: You are attempting to access the Index client directly from the pinecone module. The Index client must be instantiated through the parent Pinecone client instance so that it can inherit shared configurations such as API key.
+
+    INCORRECT USAGE:
+        ```
+        import pinecone
+
+        pc = pinecone.Pinecone(api_key='your-api-key')
+        index = pinecone.Index('CInevibe-index')
+        ```
+
+    CORRECT USAGE:
+        ```
+        from pinecone import Pinecone
+
+        pc = Pinecone(api_key='your-api-key')
+        index = pc.Index('CInevibe-index')
+        ```
+        
+2025-04-08 22:36:01,887 - INFO - Found 0 similar chunks
+2025-04-08 22:36:03,777 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:40:29,827 - WARNING - Attempt 1 failed, retrying in 2 seconds...
+2025-04-08 22:40:31,829 - WARNING - Attempt 2 failed, retrying in 2 seconds...
+2025-04-08 22:40:33,830 - ERROR - Failed to initialize Pinecone after 3 attempts: name 'pinecone' is not defined
+2025-04-08 22:44:26,501 - INFO - Pinecone initialized successfully
+2025-04-08 22:44:26,502 - INFO - Source mapping loaded successfully
+2025-04-08 22:44:28,444 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:44:28,485 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:44:29,062 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:44:29,375 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:44:53,608 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:44:53,611 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:44:54,616 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:44:54,618 - INFO - Found 0 similar chunks
+2025-04-08 22:44:56,671 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:47:24,909 - INFO - Pinecone initialized successfully
+2025-04-08 22:47:24,911 - INFO - Source mapping loaded successfully
+2025-04-08 22:47:26,749 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:47:26,796 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:47:27,326 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:47:27,617 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:47:44,550 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:47:44,560 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:47:45,565 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:47:45,566 - INFO - Found 0 similar chunks
+2025-04-08 22:47:47,617 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:48:17,989 - INFO - Pinecone initialized successfully
+2025-04-08 22:48:17,991 - INFO - Source mapping loaded successfully
+2025-04-08 22:48:21,313 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:48:21,615 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:48:21,620 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:48:21,725 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:48:43,387 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:48:43,398 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:48:44,403 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:48:44,404 - INFO - Found 0 similar chunks
+2025-04-08 22:48:46,346 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:50:07,157 - INFO - Pinecone initialized successfully
+2025-04-08 22:50:07,160 - INFO - Source mapping loaded successfully
+2025-04-08 22:50:09,227 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:50:09,240 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:50:09,793 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:50:09,996 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:50:19,688 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:50:19,693 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:50:20,698 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:50:20,700 - INFO - Found 0 similar chunks
+2025-04-08 22:50:22,791 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:51:47,529 - INFO - Pinecone initialized successfully
+2025-04-08 22:51:47,534 - INFO - Source mapping loaded successfully
+2025-04-08 22:51:49,465 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:51:49,516 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:51:50,073 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:51:50,293 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:52:10,484 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:52:10,491 - WARNING - Embedding attempt 1 failed, retrying...
+2025-04-08 22:52:11,495 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:52:11,496 - INFO - Found 0 similar chunks
+2025-04-08 22:52:13,622 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:53:38,519 - INFO - Pinecone initialized successfully
+2025-04-08 22:53:38,521 - INFO - Source mapping loaded successfully
+2025-04-08 22:53:40,508 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:53:40,527 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:53:41,211 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:53:41,242 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:53:46,644 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:53:46,901 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:53:46,902 - INFO - Found 0 similar chunks
+2025-04-08 22:53:48,804 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:54:15,913 - INFO - Pinecone initialized successfully
+2025-04-08 22:54:15,914 - INFO - Source mapping loaded successfully
+2025-04-08 22:54:17,648 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:54:17,708 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:54:18,276 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:54:18,487 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:54:40,100 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:54:40,171 - ERROR - Error accessing Pinecone index: 'NoneType' object has no attribute 'Index'
+2025-04-08 22:54:40,172 - INFO - Found 0 similar chunks
+2025-04-08 22:54:42,283 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 22:59:01,176 - INFO - Pinecone initialized successfully
+2025-04-08 22:59:01,185 - INFO - Source mapping loaded successfully
+2025-04-08 22:59:03,078 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 22:59:03,094 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 22:59:03,725 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:59:03,823 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 22:59:13,642 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 22:59:13,701 - ERROR - Error accessing Pinecone index: You are attempting to access the Index client directly from the pinecone module. The Index client must be instantiated through the parent Pinecone client instance so that it can inherit shared configurations such as API key.
+
+    INCORRECT USAGE:
+        ```
+        import pinecone
+
+        pc = pinecone.Pinecone(api_key='your-api-key')
+        index = pinecone.Index('CInevibe-index')
+        ```
+
+    CORRECT USAGE:
+        ```
+        from pinecone import Pinecone
+
+        pc = Pinecone(api_key='your-api-key')
+        index = pc.Index('CInevibe-index')
+        ```
+        
+2025-04-08 22:59:13,709 - INFO - Found 0 similar chunks
+2025-04-08 22:59:16,273 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 23:01:24,333 - INFO - Pinecone initialized successfully
+2025-04-08 23:01:24,337 - INFO - Source mapping loaded successfully
+2025-04-08 23:01:26,104 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 23:01:26,133 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 23:01:26,732 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:01:26,886 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:01:39,326 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:01:43,820 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': 'fa246a0f3a00e2bf4d028462a83fbfe3', 'date': 'Tue, 08 Apr 2025 17:31:43 GMT', 'server': 'Google Frontend', 'Content-Length': '89', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource CInevibe-index not found"},"status":404}
+
+2025-04-08 23:01:43,824 - INFO - Found 0 similar chunks
+2025-04-08 23:01:45,772 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 23:05:10,222 - INFO - Pinecone initialized successfully
+2025-04-08 23:05:10,225 - INFO - Source mapping loaded successfully
+2025-04-08 23:05:12,046 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 23:05:12,134 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 23:05:12,698 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:05:12,735 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:05:22,334 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:05:27,866 - INFO - Found 0 similar chunks
+2025-04-08 23:05:31,458 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-08 23:10:26,018 - INFO - Pinecone initialized successfully
+2025-04-08 23:10:26,019 - INFO - Source mapping loaded successfully
+2025-04-08 23:10:27,695 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-08 23:10:27,735 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-08 23:10:28,401 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:10:28,616 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:15:45,775 - INFO - Pinecone initialized successfully
+2025-04-08 23:15:45,777 - INFO - Source mapping loaded successfully
+2025-04-08 23:15:47,989 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:15:48,237 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:16:31,526 - INFO - Pinecone initialized successfully
+2025-04-08 23:16:31,529 - INFO - Source mapping loaded successfully
+2025-04-08 23:16:33,750 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:16:34,012 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:18:39,791 - INFO - Pinecone initialized successfully
+2025-04-08 23:18:39,793 - INFO - Source mapping loaded successfully
+2025-04-08 23:18:42,122 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:18:42,180 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:20:12,459 - INFO - Pinecone initialized successfully
+2025-04-08 23:20:12,461 - INFO - Source mapping loaded successfully
+2025-04-08 23:20:14,790 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:20:14,825 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:21:20,138 - INFO - Pinecone initialized successfully
+2025-04-08 23:21:20,140 - INFO - Source mapping loaded successfully
+2025-04-08 23:21:22,473 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:21:22,533 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:22:03,852 - INFO - Pinecone initialized successfully
+2025-04-08 23:22:03,854 - INFO - Source mapping loaded successfully
+2025-04-08 23:22:04,236 - INFO - Files to process: 2
+2025-04-08 23:22:04,236 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:22:06,832 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:06,873 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:22:06,875 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:22:10,198 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:13,574 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:15,835 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:18,011 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:20,233 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:22,382 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:24,430 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:26,478 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:28,741 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:30,796 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:32,784 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:34,846 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:36,910 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:39,075 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:22:41,415 - INFO - Source mapping updated successfully
+2025-04-08 23:22:43,958 - ERROR - Error upserting to Pinecone: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:52:43 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '676', 'x-pinecone-request-id': '7864589762697508162', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:22:43,960 - ERROR - Error processing sample: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:52:43 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '676', 'x-pinecone-request-id': '7864589762697508162', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:22:43,961 - ERROR - Error processing file SourceMapping.json: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:52:43 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '676', 'x-pinecone-request-id': '7864589762697508162', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:26:20,535 - INFO - Pinecone initialized successfully
+2025-04-08 23:26:20,537 - INFO - Source mapping loaded successfully
+2025-04-08 23:26:20,861 - INFO - Files to process: 2
+2025-04-08 23:26:20,861 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:26:23,109 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:26:23,124 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:26:24,119 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:26,713 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:29,401 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:32,247 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:34,905 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:37,568 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:40,332 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:42,902 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:45,558 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:48,250 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:50,922 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:53,590 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:56,143 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:26:59,010 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:02,442 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:05,120 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:07,625 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:10,186 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:12,899 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:15,559 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:18,198 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:21,058 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:23,853 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:26,771 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:29,725 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:32,562 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:27:35,021 - INFO - Source mapping updated successfully
+2025-04-08 23:27:37,671 - ERROR - Error upserting to Pinecone: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:57:36 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '913', 'x-pinecone-request-id': '771654394757773316', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:27:37,673 - ERROR - Error processing sample: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:57:36 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '913', 'x-pinecone-request-id': '771654394757773316', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:27:37,674 - ERROR - Error processing file SourceMapping.json: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 08 Apr 2025 17:57:36 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '913', 'x-pinecone-request-id': '771654394757773316', 'x-envoy-upstream-service-time': '36', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 768 does not match the dimension of the index 1024","details":[]}
+
+2025-04-08 23:30:19,979 - INFO - Pinecone initialized successfully
+2025-04-08 23:30:19,981 - INFO - Source mapping loaded successfully
+2025-04-08 23:30:20,353 - INFO - Files to process: 2
+2025-04-08 23:30:20,354 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:30:22,441 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:30:22,473 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:30:23,790 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:26,780 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:29,735 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:32,887 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:35,913 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:39,015 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:41,991 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:45,073 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:48,117 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:51,049 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:53,833 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:30:56,918 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:00,330 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:03,607 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:06,782 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:09,892 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:12,843 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:15,938 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:18,978 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:22,188 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:25,487 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:28,697 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:31,732 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:34,841 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:37,831 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:40,984 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:44,159 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:47,333 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:50,098 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:52,577 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:56,143 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:31:59,928 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:03,481 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:07,150 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:09,660 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:11,776 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:13,984 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:18,406 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:21,664 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:24,299 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:26,850 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:30,215 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:34,218 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:36,998 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:41,192 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:44,828 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:32:56,349 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-08 23:33:01,350 - ERROR - Error managing Pinecone index: Pinecone.create_index() missing 1 required positional argument: 'spec'
+2025-04-08 23:33:01,351 - ERROR - Error processing sample: Pinecone.create_index() missing 1 required positional argument: 'spec'
+2025-04-08 23:33:01,352 - ERROR - Error processing file SourceMapping.json: Pinecone.create_index() missing 1 required positional argument: 'spec'
+2025-04-08 23:36:17,529 - INFO - Pinecone initialized successfully
+2025-04-08 23:36:17,552 - INFO - Source mapping loaded successfully
+2025-04-08 23:36:17,859 - INFO - Files to process: 2
+2025-04-08 23:36:17,860 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:36:20,028 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:36:20,051 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:36:20,951 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:24,944 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:27,327 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:30,912 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:34,620 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:37,305 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:41,201 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:43,458 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:45,733 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:48,196 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:50,490 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:54,020 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:36:57,754 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:01,480 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:03,960 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:06,803 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:09,286 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:12,151 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:16,247 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:19,978 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:23,827 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:26,448 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:30,072 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:32,858 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:36,114 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:39,856 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:43,386 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:47,178 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:51,270 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:54,578 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:37:58,209 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:01,597 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:05,403 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:09,190 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:11,757 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:14,469 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:17,986 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:22,195 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:25,780 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:29,467 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:32,016 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:35,956 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:39,892 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:42,471 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:46,258 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:48,308 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:38:59,472 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-08 23:39:04,532 - INFO - Source mapping updated successfully
+2025-04-08 23:39:08,178 - INFO - Upserted 46 embeddings to Pinecone
+2025-04-08 23:39:08,185 - INFO - Processed and moved file: SourceMapping.json
+2025-04-08 23:40:00,531 - INFO - Pinecone initialized successfully
+2025-04-08 23:40:00,533 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-08 23:40:00,941 - INFO - Files to process: 2
+2025-04-08 23:40:00,942 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:40:03,059 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:40:03,341 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:40:05,108 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:40:15,463 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-08 23:40:29,381 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-08 23:40:34,386 - INFO - Source mapping updated successfully
+2025-04-08 23:40:36,239 - INFO - Upserted 1 embeddings to Pinecone
+2025-04-08 23:40:36,246 - INFO - Processed and moved file: SourceMapping.json
+2025-04-08 23:43:53,753 - INFO - Pinecone initialized successfully
+2025-04-08 23:43:53,755 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-08 23:43:56,229 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:43:56,259 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:46:24,967 - INFO - Pinecone initialized successfully
+2025-04-08 23:46:24,970 - INFO - Source mapping loaded successfully
+2025-04-08 23:46:25,375 - INFO - Files to process: 2
+2025-04-08 23:46:25,375 - ERROR - Error processing file Embedded: [Errno 13] Permission denied: 'Dataset\\Embedded'
+2025-04-08 23:46:27,482 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:46:27,783 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:46:29,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:46:32,145 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:48:35,426 - INFO - Pinecone initialized successfully
+2025-04-08 23:48:35,427 - INFO - Source mapping loaded successfully
+2025-04-08 23:48:35,609 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:48:37,180 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:48:37,290 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:52:19,177 - INFO - Pinecone initialized successfully
+2025-04-08 23:52:19,178 - INFO - Source mapping loaded successfully
+2025-04-08 23:52:19,393 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:52:20,920 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:52:21,050 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:52:41,716 - INFO - Pinecone initialized successfully
+2025-04-08 23:52:41,718 - INFO - Source mapping loaded successfully
+2025-04-08 23:52:41,730 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:52:43,498 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:52:43,597 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:54:50,729 - INFO - Pinecone initialized successfully
+2025-04-08 23:54:50,730 - INFO - Source mapping loaded successfully
+2025-04-08 23:54:50,989 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:54:52,521 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:54:52,629 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:55:16,412 - INFO - Pinecone initialized successfully
+2025-04-08 23:55:16,413 - INFO - Source mapping loaded successfully
+2025-04-08 23:55:16,516 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:55:18,206 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:55:18,312 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:55:48,875 - INFO - Pinecone initialized successfully
+2025-04-08 23:55:48,876 - INFO - Source mapping loaded successfully
+2025-04-08 23:55:48,925 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:55:50,722 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:55:50,761 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:56:06,642 - INFO - Pinecone initialized successfully
+2025-04-08 23:56:06,643 - INFO - Source mapping loaded successfully
+2025-04-08 23:56:08,421 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:56:08,456 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:56:45,409 - INFO - Pinecone initialized successfully
+2025-04-08 23:56:45,410 - INFO - Source mapping loaded successfully
+2025-04-08 23:56:45,512 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-08 23:56:45,614 - INFO - Files to process: 1
+2025-04-08 23:56:47,280 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:56:47,400 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:56:48,468 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:49,806 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:52,391 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:53,770 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:55,163 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:56,513 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:56:59,163 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:01,795 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:03,067 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:05,637 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:08,153 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:09,439 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:11,958 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:13,267 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:14,535 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:57:24,971 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-08 23:57:38,762 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-08 23:57:43,793 - INFO - Source mapping updated successfully
+2025-04-08 23:57:46,080 - INFO - Upserted 15 embeddings to Pinecone
+2025-04-08 23:57:46,087 - INFO - Processed and moved file: SourceMapping.json
+2025-04-08 23:58:33,837 - INFO - Pinecone initialized successfully
+2025-04-08 23:58:33,837 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-08 23:58:34,049 - INFO - Files to process: 1
+2025-04-08 23:58:35,725 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:58:35,765 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-08 23:58:35,812 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-08 23:58:51,986 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-08 23:59:06,683 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-08 23:59:11,689 - INFO - Source mapping updated successfully
+2025-04-08 23:59:13,014 - INFO - Upserted 1 embeddings to Pinecone
+2025-04-08 23:59:13,020 - INFO - Processed and moved file: SourceMapping.json
+2025-04-09 00:01:07,306 - INFO - Pinecone initialized successfully
+2025-04-09 00:01:07,307 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-09 00:01:07,416 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:01:07,515 - INFO - Files to process: 1
+2025-04-09 00:01:09,154 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:01:09,245 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:01:09,399 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:01:19,787 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:01:28,281 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:01:33,287 - INFO - Source mapping updated successfully
+2025-04-09 00:01:34,744 - INFO - Upserted 1 embeddings to Pinecone
+2025-04-09 00:01:34,753 - INFO - Processed and moved file: SourceMapping.json
+2025-04-09 00:01:35,249 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:01:35,420 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:03:52,586 - INFO - Pinecone initialized successfully
+2025-04-09 00:03:52,586 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-09 00:03:53,639 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:03:53,658 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:03:54,539 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:03:54,581 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:06:16,431 - INFO - Pinecone initialized successfully
+2025-04-09 00:06:16,432 - INFO - Source mapping loaded successfully
+2025-04-09 00:06:18,147 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:06:18,337 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:06:58,634 - INFO - Pinecone initialized successfully
+2025-04-09 00:06:58,635 - INFO - Source mapping loaded successfully
+2025-04-09 00:06:58,742 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:07:00,476 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:07:00,500 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:07:25,605 - INFO - Pinecone initialized successfully
+2025-04-09 00:07:25,605 - INFO - Source mapping loaded successfully
+2025-04-09 00:07:25,870 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:07:27,406 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:07:27,459 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:08:13,551 - INFO - Pinecone initialized successfully
+2025-04-09 00:08:13,552 - INFO - Source mapping loaded successfully
+2025-04-09 00:08:13,632 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:08:13,739 - INFO - Files to process: 1
+2025-04-09 00:08:15,334 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:15,409 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:08:15,510 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:08:16,635 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:19,180 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:20,516 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:21,784 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:23,065 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:24,343 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:25,608 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:27,193 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:28,487 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:29,789 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:52,499 - INFO - Pinecone initialized successfully
+2025-04-09 00:08:52,499 - INFO - Source mapping loaded successfully
+2025-04-09 00:08:52,590 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:08:52,721 - INFO - Files to process: 1
+2025-04-09 00:08:54,321 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:54,355 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:08:54,445 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:08:55,606 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:56,886 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:58,159 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:08:59,705 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:01,201 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:02,500 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:03,814 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:05,083 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:06,395 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:07,673 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:09,222 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:11,955 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:13,252 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:14,523 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:09:24,754 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:09:38,912 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:09:43,926 - INFO - Source mapping updated successfully
+2025-04-09 00:09:45,859 - INFO - Upserted 15 embeddings to Pinecone
+2025-04-09 00:09:45,861 - INFO - Processed and moved file: SourceMapping.json
+2025-04-09 00:09:46,344 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:09:46,358 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:10:16,243 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:10:18,680 - INFO - Found 5 similar chunks
+2025-04-09 00:10:21,792 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:11:23,724 - INFO - Pinecone initialized successfully
+2025-04-09 00:11:23,725 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-09 00:11:23,813 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:11:24,707 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:11:24,722 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:11:25,596 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:11:25,642 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:11:43,644 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:11:47,442 - INFO - Found 0 similar chunks
+2025-04-09 00:11:48,235 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:13:22,166 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:13:23,755 - INFO - Found 0 similar chunks
+2025-04-09 00:13:24,518 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:13:59,820 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:14:01,947 - INFO - Found 0 similar chunks
+2025-04-09 00:14:03,171 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:20:43,759 - INFO - Pinecone initialized successfully
+2025-04-09 00:20:43,761 - INFO - Source mapping loaded successfully
+2025-04-09 00:20:44,161 - INFO - Files to process: 1
+2025-04-09 00:20:46,332 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:20:46,459 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:20:48,209 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:20:59,167 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:21:58,398 - INFO - Pinecone initialized successfully
+2025-04-09 00:21:58,401 - INFO - Source mapping loaded successfully
+2025-04-09 00:22:00,864 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:22:01,383 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:22:01,491 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:22:01,495 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:22:15,542 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:22:17,710 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '6e0f495b145a84e2e98f24a616cb5af8', 'date': 'Tue, 08 Apr 2025 18:52:16 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:22:17,712 - INFO - Found 0 similar chunks
+2025-04-09 00:22:19,505 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:24:09,301 - INFO - Pinecone initialized successfully
+2025-04-09 00:24:09,303 - INFO - Source mapping loaded successfully
+2025-04-09 00:24:10,991 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:24:11,019 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:24:11,783 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:24:11,883 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:24:24,584 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:24:26,945 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': 'd9ba913c6a899f8710de1c773b337489', 'date': 'Tue, 08 Apr 2025 18:54:26 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:24:26,947 - INFO - Found 0 similar chunks
+2025-04-09 00:24:29,308 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:25:11,268 - INFO - Pinecone initialized successfully
+2025-04-09 00:25:11,270 - INFO - Source mapping loaded successfully
+2025-04-09 00:25:13,124 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:25:13,190 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:25:13,839 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:25:13,889 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:25:24,505 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:25:26,948 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': 'a58f252d1d09e92821a499bfe8a3059e', 'date': 'Tue, 08 Apr 2025 18:55:26 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:25:26,951 - INFO - Found 0 similar chunks
+2025-04-09 00:25:26,951 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:26:34,061 - INFO - Pinecone initialized successfully
+2025-04-09 00:26:34,062 - INFO - Source mapping loaded successfully
+2025-04-09 00:26:35,915 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:26:35,962 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:26:36,559 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:26:36,708 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:26:45,696 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:26:47,602 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': 'fbc1b6245fc41e917262cc4c1021e493', 'date': 'Tue, 08 Apr 2025 18:56:46 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:26:47,604 - INFO - Found 0 similar chunks
+2025-04-09 00:26:47,606 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:27:48,044 - INFO - Pinecone initialized successfully
+2025-04-09 00:27:48,046 - INFO - Source mapping loaded successfully
+2025-04-09 00:27:49,842 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:27:49,895 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:27:50,617 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:27:50,641 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:27:58,265 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:27:59,829 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '8764df64e635f3fc5fe2f983db30b504', 'date': 'Tue, 08 Apr 2025 18:57:59 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:27:59,832 - INFO - Found 0 similar chunks
+2025-04-09 00:28:01,545 - ERROR - Error generating response: 'dict' object has no attribute 'content'
+2025-04-09 00:28:57,590 - INFO - Pinecone initialized successfully
+2025-04-09 00:28:57,591 - INFO - Source mapping loaded successfully
+2025-04-09 00:28:59,484 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:28:59,525 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:29:00,166 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:29:00,257 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:29:07,319 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:29:08,959 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': 'f074237fc7a1d9a5522a8eb472ea24ac', 'date': 'Tue, 08 Apr 2025 18:59:08 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:29:08,961 - INFO - Found 0 similar chunks
+2025-04-09 00:29:10,487 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:29:11,930 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:29:11,933 - INFO - AFC remote call 1 is done.
+2025-04-09 00:29:11,935 - ERROR - Error generating response: 'str' object is not callable
+2025-04-09 00:32:06,659 - INFO - Pinecone initialized successfully
+2025-04-09 00:32:06,660 - INFO - Source mapping loaded successfully
+2025-04-09 00:32:08,583 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:32:08,631 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:32:09,285 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:32:09,360 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:32:25,978 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:32:27,831 - ERROR - Error accessing Pinecone index: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'content-type': 'text/plain; charset=utf-8', 'access-control-allow-origin': '*', 'vary': 'origin,access-control-request-method,access-control-request-headers', 'access-control-expose-headers': '*', 'x-pinecone-api-version': '2025-01', 'x-cloud-trace-context': '51173a5ac74738a47f1b77aabef8c460', 'date': 'Tue, 08 Apr 2025 19:02:27 GMT', 'server': 'Google Frontend', 'Content-Length': '88', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'})
+HTTP response body: {"error":{"code":"NOT_FOUND","message":"Resource clnevibeindex not found"},"status":404}
+
+2025-04-09 00:32:27,834 - INFO - Found 0 similar chunks
+2025-04-09 00:32:29,503 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:32:32,018 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:32:32,020 - INFO - AFC remote call 1 is done.
+2025-04-09 00:34:54,712 - INFO - Pinecone initialized successfully
+2025-04-09 00:34:54,714 - INFO - Source mapping loaded successfully
+2025-04-09 00:34:55,110 - INFO - Files to process: 1
+2025-04-09 00:34:57,279 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:34:57,407 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:34:57,669 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:34:59,721 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:01,750 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:03,778 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:05,828 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:07,805 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:09,818 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:11,766 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:13,813 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:15,860 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:17,830 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:20,064 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:22,022 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:24,082 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:26,205 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:35:36,857 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:35:41,865 - INFO - Source mapping updated successfully
+2025-04-09 00:35:45,026 - INFO - Upserted 15 embeddings to Pinecone
+2025-04-09 00:35:45,032 - INFO - Processed and moved file: SourceMapping.json
+2025-04-09 00:35:45,994 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:35:46,027 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:36:58,161 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:37:00,850 - INFO - Found 5 similar chunks
+2025-04-09 00:37:04,435 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:37:05,431 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:37:05,442 - INFO - AFC remote call 1 is done.
+2025-04-09 00:37:56,064 - INFO - Pinecone initialized successfully
+2025-04-09 00:37:56,065 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-09 00:37:56,375 - INFO - Files to process: 1
+2025-04-09 00:37:58,431 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:37:58,679 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:37:59,157 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:38:05,235 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:38:20,493 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:38:25,497 - INFO - Source mapping updated successfully
+2025-04-09 00:38:27,585 - INFO - Upserted 1 embeddings to Pinecone
+2025-04-09 00:38:27,592 - INFO - Processed and moved file: SourceMapping.json
+2025-04-09 00:38:28,706 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:38:28,733 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:38:48,411 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:38:51,114 - INFO - Found 1 similar chunks
+2025-04-09 00:38:52,805 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:38:53,706 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:38:53,707 - INFO - AFC remote call 1 is done.
+2025-04-09 00:39:32,073 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:39:34,677 - INFO - Found 1 similar chunks
+2025-04-09 00:39:38,929 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:39:39,781 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:39:39,783 - INFO - AFC remote call 1 is done.
+2025-04-09 00:43:32,521 - INFO - Pinecone initialized successfully
+2025-04-09 00:43:32,523 - WARNING - SourceMapping.json not found, creating empty mapping
+2025-04-09 00:43:34,131 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:43:34,183 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:43:35,049 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:43:35,054 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:44:19,676 - INFO - Pinecone initialized successfully
+2025-04-09 00:44:19,677 - INFO - Source mapping loaded successfully
+2025-04-09 00:44:19,978 - INFO - Files to process: 1
+2025-04-09 00:44:20,417 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 00:44:22,059 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:44:22,279 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:44:22,516 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:24,510 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:26,580 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:28,612 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:30,574 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:33,806 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:35,816 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:44:46,863 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:45:01,822 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:45:06,828 - INFO - Source mapping updated successfully
+2025-04-09 00:45:09,355 - INFO - Upserted 7 embeddings to Pinecone
+2025-04-09 00:45:09,361 - INFO - Processed and moved file: information.txt
+2025-04-09 00:45:10,474 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:45:10,519 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:45:42,357 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:45:44,312 - INFO - Found 5 similar chunks
+2025-04-09 00:45:46,145 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:45:48,194 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:45:48,196 - INFO - AFC remote call 1 is done.
+2025-04-09 00:46:47,952 - INFO - Pinecone initialized successfully
+2025-04-09 00:46:47,954 - INFO - Source mapping loaded successfully
+2025-04-09 00:46:49,679 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:46:49,705 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:46:50,374 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:46:50,510 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:47:16,979 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:47:22,210 - INFO - Found 5 similar chunks
+2025-04-09 00:47:25,707 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:47:27,628 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:47:27,631 - INFO - AFC remote call 1 is done.
+2025-04-09 00:47:57,071 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:47:59,994 - INFO - Found 5 similar chunks
+2025-04-09 00:48:04,207 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:48:07,052 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:48:07,054 - INFO - AFC remote call 1 is done.
+2025-04-09 00:48:40,128 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:48:43,548 - INFO - Found 5 similar chunks
+2025-04-09 00:48:47,403 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:48:50,675 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:48:50,678 - INFO - AFC remote call 1 is done.
+2025-04-09 00:52:17,665 - INFO - Pinecone initialized successfully
+2025-04-09 00:52:17,666 - INFO - Source mapping loaded successfully
+2025-04-09 00:52:17,994 - INFO - Files to process: 1
+2025-04-09 00:52:20,165 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:52:20,167 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 00:52:20,561 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:22,615 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:24,703 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:27,994 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:31,273 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:34,541 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:37,924 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:52:49,099 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 00:53:03,917 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 00:53:08,921 - INFO - Source mapping updated successfully
+2025-04-09 00:53:11,173 - INFO - Upserted 7 embeddings to Pinecone
+2025-04-09 00:53:11,178 - INFO - Processed and moved file: information.txt
+2025-04-09 00:53:12,177 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 00:53:12,202 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 00:53:40,008 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:53:42,149 - INFO - Found 5 similar chunks
+2025-04-09 00:53:43,842 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:53:45,791 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:53:45,793 - INFO - AFC remote call 1 is done.
+2025-04-09 00:53:59,188 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 00:54:02,027 - INFO - Found 5 similar chunks
+2025-04-09 00:54:05,723 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 00:54:07,765 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 00:54:07,772 - INFO - AFC remote call 1 is done.
+2025-04-09 01:00:49,977 - INFO - Pinecone initialized successfully
+2025-04-09 01:00:49,978 - INFO - Source mapping loaded successfully
+2025-04-09 01:00:51,783 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 01:00:51,820 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 01:00:52,469 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:00:52,622 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:01:11,144 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:01:17,033 - INFO - Found 5 similar chunks
+2025-04-09 01:01:20,595 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:01:22,486 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:01:22,488 - INFO - AFC remote call 1 is done.
+2025-04-09 01:01:31,720 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:01:34,306 - INFO - Found 5 similar chunks
+2025-04-09 01:01:35,836 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:01:37,495 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:01:37,498 - INFO - AFC remote call 1 is done.
+2025-04-09 01:02:50,245 - INFO - Pinecone initialized successfully
+2025-04-09 01:02:50,248 - INFO - Source mapping loaded successfully
+2025-04-09 01:02:52,049 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 01:02:52,106 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 01:02:52,737 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:02:53,565 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:03:09,692 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:03:13,628 - INFO - Found 5 similar chunks
+2025-04-09 01:03:15,475 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:03:17,257 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:03:17,259 - INFO - AFC remote call 1 is done.
+2025-04-09 01:03:30,513 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:03:32,551 - INFO - Found 5 similar chunks
+2025-04-09 01:03:34,819 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:03:36,601 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:03:36,603 - INFO - AFC remote call 1 is done.
+2025-04-09 01:06:28,200 - INFO - Pinecone initialized successfully
+2025-04-09 01:06:28,202 - INFO - Source mapping loaded successfully
+2025-04-09 01:06:29,807 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 01:06:29,855 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 01:06:30,547 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:06:30,887 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:06:49,541 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:06:52,417 - INFO - Found 5 similar chunks
+2025-04-09 01:06:53,591 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:06:56,202 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:06:56,203 - INFO - AFC remote call 1 is done.
+2025-04-09 01:07:06,268 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:07:07,875 - INFO - Found 5 similar chunks
+2025-04-09 01:07:09,133 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:07:11,026 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:07:11,029 - INFO - AFC remote call 1 is done.
+2025-04-09 01:10:53,330 - INFO - Pinecone initialized successfully
+2025-04-09 01:10:53,331 - INFO - Source mapping loaded successfully
+2025-04-09 01:10:53,463 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2025-04-09 01:10:54,284 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 01:10:54,298 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 01:10:55,294 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:10:55,294 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:11:03,980 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:11:07,508 - INFO - Found 5 similar chunks
+2025-04-09 01:11:08,668 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:11:10,497 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:11:10,498 - INFO - AFC remote call 1 is done.
+2025-04-09 01:11:27,059 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:11:28,677 - INFO - Found 5 similar chunks
+2025-04-09 01:11:29,984 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:11:30,685 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:11:30,687 - INFO - AFC remote call 1 is done.
+2025-04-09 01:14:53,075 - INFO - Pinecone initialized successfully
+2025-04-09 01:14:53,076 - INFO - Source mapping loaded successfully
+2025-04-09 01:14:54,286 - INFO - Pinecone initialized successfully
+2025-04-09 01:14:54,286 - INFO - Source mapping loaded successfully
+2025-04-09 01:18:04,336 - INFO - Pinecone initialized successfully
+2025-04-09 01:18:04,337 - INFO - Source mapping loaded successfully
+2025-04-09 01:18:04,402 - INFO - Started server process [19352]
+2025-04-09 01:18:04,403 - INFO - Waiting for application startup.
+2025-04-09 01:18:04,405 - INFO - Application startup complete.
+2025-04-09 01:18:04,407 - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-04-09 01:20:04,806 - INFO - Shutting down
+2025-04-09 01:20:04,916 - INFO - Waiting for application shutdown.
+2025-04-09 01:20:04,921 - INFO - Application shutdown complete.
+2025-04-09 01:20:04,924 - INFO - Finished server process [19352]
+2025-04-09 01:24:24,867 - INFO - Pinecone initialized successfully
+2025-04-09 01:24:24,868 - INFO - Source mapping loaded successfully
+2025-04-09 01:41:11,582 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:41:15,049 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:41:16,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:41:16,325 - INFO - AFC remote call 1 is done.
+2025-04-09 01:41:55,150 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:41:57,218 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:41:59,788 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:41:59,792 - INFO - AFC remote call 1 is done.
+2025-04-09 01:42:31,214 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:42:33,329 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:42:35,311 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:42:35,313 - INFO - AFC remote call 1 is done.
+2025-04-09 01:52:40,213 - INFO - Pinecone initialized successfully
+2025-04-09 01:52:40,215 - INFO - Source mapping loaded successfully
+2025-04-09 01:53:05,047 - INFO - Pinecone initialized successfully
+2025-04-09 01:53:05,048 - INFO - Source mapping loaded successfully
+2025-04-09 01:53:05,405 - INFO - Files to process: 1
+2025-04-09 01:53:07,532 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:53:07,617 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-09 01:53:08,279 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:53:10,424 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:53:14,045 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:53:17,696 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:53:28,226 - INFO - Deleted existing Pinecone index: clnevibeindex
+2025-04-09 01:53:43,471 - INFO - Created new Pinecone index: clnevibeindex
+2025-04-09 01:53:48,475 - INFO - Source mapping updated successfully
+2025-04-09 01:53:50,760 - INFO - Upserted 4 embeddings to Pinecone
+2025-04-09 01:53:50,766 - INFO - Processed and moved file: information.txt
+2025-04-09 01:53:51,803 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-09 01:53:51,833 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-09 01:55:54,453 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:55:58,351 - INFO - Found 4 similar chunks
+2025-04-09 01:56:01,837 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:56:05,411 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:56:05,415 - INFO - AFC remote call 1 is done.
+2025-04-09 01:56:23,805 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-09 01:56:26,455 - INFO - Found 4 similar chunks
+2025-04-09 01:56:30,277 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-09 01:56:31,464 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-09 01:56:31,467 - INFO - AFC remote call 1 is done.
+2025-04-11 23:13:05,042 - INFO - Pinecone initialized successfully
+2025-04-11 23:13:05,062 - INFO - Source mapping loaded successfully
+2025-04-11 23:13:06,173 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-11 23:13:06,350 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-11 23:13:07,195 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-11 23:13:07,262 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-11 23:13:17,899 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-11 23:13:23,671 - INFO - Found 4 similar chunks
+2025-04-11 23:13:26,450 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-11 23:13:27,530 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-11 23:13:27,548 - INFO - AFC remote call 1 is done.
+2025-04-12 01:02:25,928 - INFO - Pinecone initialized successfully
+2025-04-12 01:02:25,929 - INFO - Source mapping loaded successfully
+2025-04-12 01:02:26,923 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-12 01:02:27,107 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-12 01:02:27,847 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-12 01:02:27,902 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-12 01:02:36,350 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:02:40,734 - INFO - Found 4 similar chunks
+2025-04-12 01:02:43,314 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:02:45,678 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:02:45,681 - INFO - AFC remote call 1 is done.
+2025-04-12 01:02:59,209 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:03:01,678 - INFO - Found 4 similar chunks
+2025-04-12 01:03:04,334 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:03:07,085 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:03:07,087 - INFO - AFC remote call 1 is done.
+2025-04-12 01:03:26,188 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:03:28,675 - INFO - Found 4 similar chunks
+2025-04-12 01:03:31,402 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:03:33,595 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:03:33,599 - INFO - AFC remote call 1 is done.
+2025-04-12 01:03:44,061 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:03:46,617 - INFO - Found 4 similar chunks
+2025-04-12 01:03:49,713 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:03:51,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:03:51,324 - INFO - AFC remote call 1 is done.
+2025-04-12 01:17:05,507 - INFO - Pinecone initialized successfully
+2025-04-12 01:17:05,510 - INFO - Source mapping loaded successfully
+2025-04-12 01:17:07,265 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-12 01:17:07,290 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-04-12 01:17:07,920 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-12 01:17:08,183 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-12 01:17:32,143 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:17:39,703 - INFO - Found 4 similar chunks
+2025-04-12 01:17:44,247 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:17:45,457 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:17:45,461 - INFO - AFC remote call 1 is done.
+2025-04-12 01:18:01,721 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:18:04,608 - INFO - Found 4 similar chunks
+2025-04-12 01:18:07,916 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:18:10,236 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:18:10,240 - INFO - AFC remote call 1 is done.
+2025-04-12 01:18:47,614 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 01:18:50,587 - INFO - Found 4 similar chunks
+2025-04-12 01:18:54,106 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 01:18:55,089 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 01:18:55,094 - INFO - AFC remote call 1 is done.
+2025-04-12 11:54:03,105 - INFO - Pinecone initialized successfully
+2025-04-12 11:54:03,107 - INFO - Source mapping loaded successfully
+2025-04-12 12:00:26,911 - INFO - Pinecone initialized successfully
+2025-04-12 12:00:26,913 - INFO - Source mapping loaded successfully
+2025-04-12 12:02:00,998 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:02:06,854 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:02:10,355 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:02:10,364 - INFO - AFC remote call 1 is done.
+2025-04-12 12:02:17,795 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:02:30,062 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:02:32,641 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:02:32,646 - INFO - AFC remote call 1 is done.
+2025-04-12 12:02:50,566 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:03:01,178 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:03:02,232 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:03:02,236 - INFO - AFC remote call 1 is done.
+2025-04-12 12:03:31,839 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:03:39,898 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:03:40,942 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:03:40,946 - INFO - AFC remote call 1 is done.
+2025-04-12 12:04:23,317 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:04:27,454 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:04:28,458 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:04:28,461 - INFO - AFC remote call 1 is done.
+2025-04-12 12:05:32,532 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:05:36,753 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:05:37,879 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:05:37,881 - INFO - AFC remote call 1 is done.
+2025-04-12 12:05:46,627 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:05:50,732 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:05:51,732 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:05:51,737 - INFO - AFC remote call 1 is done.
+2025-04-12 12:13:09,032 - INFO - Pinecone initialized successfully
+2025-04-12 12:13:09,033 - INFO - Source mapping loaded successfully
+2025-04-12 12:17:31,639 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:17:37,961 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:17:40,340 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:17:40,348 - INFO - AFC remote call 1 is done.
+2025-04-12 12:18:08,501 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 12:18:12,266 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 12:18:14,645 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 12:18:14,648 - INFO - AFC remote call 1 is done.
+2025-04-12 12:53:21,673 - INFO - Pinecone initialized successfully
+2025-04-12 12:53:21,675 - INFO - Source mapping loaded successfully
+2025-04-12 13:02:23,282 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 13:02:27,624 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 13:02:28,828 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 13:02:28,830 - INFO - AFC remote call 1 is done.
+2025-04-12 13:02:48,446 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 13:02:51,266 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 13:02:52,138 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 13:02:52,141 - INFO - AFC remote call 1 is done.
+2025-04-12 21:43:35,603 - INFO - Pinecone initialized successfully
+2025-04-12 21:43:35,604 - INFO - Source mapping loaded successfully
+2025-04-12 21:44:17,314 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 21:44:22,805 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 21:44:23,868 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 21:44:23,871 - INFO - AFC remote call 1 is done.
+2025-04-12 21:54:11,163 - INFO - Pinecone initialized successfully
+2025-04-12 21:54:11,164 - INFO - Source mapping loaded successfully
+2025-04-12 22:17:54,126 - INFO - Pinecone initialized successfully
+2025-04-12 22:17:54,128 - INFO - Source mapping loaded successfully
+2025-04-12 22:27:00,904 - INFO - Pinecone initialized successfully
+2025-04-12 22:27:00,905 - INFO - Source mapping loaded successfully
+2025-04-12 22:34:22,912 - INFO - Pinecone initialized successfully
+2025-04-12 22:34:22,914 - INFO - Source mapping loaded successfully
+2025-04-12 23:01:32,294 - INFO - Pinecone initialized successfully
+2025-04-12 23:01:32,295 - INFO - Source mapping loaded successfully
+2025-04-12 23:07:31,273 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 23:07:42,103 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 23:07:44,661 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 23:07:44,672 - INFO - AFC remote call 1 is done.
+2025-04-12 23:08:00,764 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:batchEmbedContents "HTTP/1.1 200 OK"
+2025-04-12 23:08:07,290 - INFO - AFC is enabled with max remote calls: 10.
+2025-04-12 23:08:08,568 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-04-12 23:08:08,572 - INFO - AFC remote call 1 is done.
