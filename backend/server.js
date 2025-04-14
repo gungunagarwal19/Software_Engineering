@@ -89,6 +89,7 @@ app.get("/movies", async (req, res) => {
 
                 if (movie.movie.ids.imdb) {
                     try {
+                        // console.log("Fanart API Key:", fanartApiKey);
                         const fanartResponse = await axios.get(`${fanartBaseUrl}/${movie.movie.ids.imdb}`, { params: { api_key: fanartApiKey } });
                         imageUrl = fanartResponse.data?.movieposter?.[0]?.url || null;
                     } catch (error) { console.error(`Image error for ${movie.movie.title}:`, error.message); }
