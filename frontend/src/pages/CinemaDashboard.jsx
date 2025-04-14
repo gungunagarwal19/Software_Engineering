@@ -7,35 +7,37 @@ const SeatDisplay = ({ bookedSeats }) => {
     const rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
     const seatsPerRow = 16;
 
-    const isSeatBooked = (seatId) => {
-        return bookedSeats.includes(seatId);
-    };
+    const isSeatBooked = (seatId) => bookedSeats.includes(seatId);
 
     return (
-        <div className="flex flex-col items-center p-5 bg-gray-800 rounded-lg shadow-xl">
-            <div className="bg-gray-700 text-white w-3/5 text-center p-2 rounded-md font-bold mb-5 text-sm">
-                Stage
+        <div className="flex flex-col items-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-2xl border border-gray-700">
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-full font-semibold mb-6 text-sm shadow-md">
+                🎭 Stage
             </div>
 
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col gap-4">
                 {rows.map((row) => (
-                    <div key={row} className="grid grid-cols-[repeat(16,minmax(0,1fr))] gap-3 justify-center">
-                        {Array(seatsPerRow)
-                            .fill()
-                            .map((_, seatIndex) => {
-                                const seatId = `${row}${seatIndex + 1}`;
-                                const isBooked = isSeatBooked(seatId);
-                                return (
-                                    <div
-                                        key={seatId}
-                                        className={`w-12 h-12 flex items-center justify-center rounded-md text-xs cursor-default
-                                            ${isBooked ? "bg-gray-600 opacity-60" : "bg-gray-400 text-black"}`}
-                                        title={`Seat ${seatId} - ${isBooked ? "Booked" : "Available"}`}
-                                    >
-                                        <FaChair className="text-xl" />
-                                    </div>
-                                );
-                            })}
+                    <div key={row} className="grid grid-cols-[repeat(16,minmax(0,1fr))] gap-2 justify-center">
+                        {Array(seatsPerRow).fill().map((_, seatIndex) => {
+                            const seatId = `${row}${seatIndex + 1}`;
+                            const isBooked = isSeatBooked(seatId);
+
+                            return (
+                                <div
+                                    key={seatId}
+                                    className={`
+                                        w-10 h-10 flex items-center justify-center rounded-md 
+                                        transition-transform transform hover:scale-105 duration-200 cursor-default
+                                        ${isBooked 
+                                            ? "bg-yellow-500 text-white opacity-90 shadow-md" 
+                                            : "bg-teal-500 text-white hover:bg-teal-400 shadow-md"}
+                                    `}
+                                    title={`Seat ${seatId} - ${isBooked ? "Booked" : "Available"}`}
+                                >
+                                    <FaChair className="text-lg" />
+                                </div>
+                            );
+                        })}
                     </div>
                 ))}
             </div>
@@ -50,7 +52,6 @@ const CinemaDashboard = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    // Extract all booked seats from tickets
     const bookedSeats = tickets.reduce((seats, ticket) => {
         const ticketSeats = JSON.parse(ticket.seats);
         return [...seats, ...ticketSeats];
@@ -129,7 +130,7 @@ const CinemaDashboard = () => {
                         {tickets.length > 0 ? (
                             <div className="space-y-4">
                                 {tickets.map((ticket) => (
-                                    <div key={ticket.id} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                    <div key={ticket.id} className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
                                         <div className="grid grid-cols-2 gap-4 text-white">
                                             <div>
                                                 <h3 className="text-xl font-semibold mb-2">{ticket.movie}</h3>
